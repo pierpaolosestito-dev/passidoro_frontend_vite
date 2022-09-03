@@ -1,0 +1,42 @@
+.default-avatar{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:20px;
+    vertical-align:middle;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    
+}
+#yl-badge{
+    background-color: #6ecfea;
+    color: #ffd700;
+}
+#formatimg{
+    display:none;
+}
+.hd-button{
+    max-width:800px;
+}
+#container-btn{
+    width:130px;
+    height:60px;
+}
+#label{
+    margin-left:5px;
+}
+#row{
+    margin-top:10px;
+}
+#row2{
+    margin-top:5px;
+}
+#hidden-row{
+    margin-top:10px;
+    display:none;
+}
+.badgeEmails{
+    background-color: #c00;
+    color: rgb(255, 255, 255);
+}

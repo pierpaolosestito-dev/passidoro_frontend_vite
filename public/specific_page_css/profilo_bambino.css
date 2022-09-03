@@ -1,0 +1,36 @@
+.defaultAvatar{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:20px;
+    vertical-align:middle;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    
+}
+#formatimg{
+    display:none;
+    margin-bottom:10px;
+}
+#removeButton{
+    border: solid 7px red /* #41403e;*/
+}
+#removeButton:hover{
+    box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+    background-color:red;
+    color: white;
+}
+#row{
+    margin-top:10px;
+}
+#emailPadre,#emailMadre{
+    display: none;
+}
+.badgeEmails{
+    background-color: #c00;
+    color: rgb(255, 255, 255);
+}
+#hiddenRow2,#hiddenRow3{
+    margin-top:10px;
+}

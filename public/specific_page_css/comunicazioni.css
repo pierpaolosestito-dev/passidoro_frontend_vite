@@ -1,0 +1,14 @@
+#row{
+    margin-top:10px;
+}
+#label{
+    margin-left:5px;
+}
+#container-btn{
+    width:130px;
+    height:60px;
+}
+#hidden-row{
+    margin-top:10px;
+    display:none;
+}

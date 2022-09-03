@@ -1,0 +1,17 @@
+#row{
+    margin-top:10px;
+}
+#row1{
+    margin-top:15px;
+}
+#hidden-row{
+    display: none;
+}
+#container-btn{
+    width:180px;
+}
+.hd-button{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}

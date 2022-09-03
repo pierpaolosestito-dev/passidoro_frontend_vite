@@ -1,0 +1,37 @@
+button{
+  align-self: center;
+  font-weight: bold;
+  background: transparent;
+  margin: 0 1rem;
+  transition: all 0.5s ease;
+  color: #41403e;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  outline: none;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+.hd-button:hover{
+    box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+    background-color:#6ecfea ;
+    color: #ffd700;
+}
+
+.hd-button{
+    border: solid 7px #6ecfea /* #41403e;*/
+}
+.hd-button:disabled,.hd-button:disabled:active{
+    border: solid 7px black;
+    background-color: gainsboro;
+    color:black;
+}
+
+
+.hd-button2{
+    border: solid 7px #ffd700
+}
+.hd-button2:hover{
+    box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+    background-color: #ffd700 ;
+    color: #6ecfea;
+}
