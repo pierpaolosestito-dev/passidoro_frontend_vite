@@ -1,5 +1,9 @@
 $(document).on('click', '#logout', function(){ 
     /**/
+    if(sessionStorage.getItem("key")==null){
+      swalAlert(0,"Devi effettuare prima il login.");
+      return;
+    }
     Swal.fire({
         title: '<div style="background-color:#fff">Vuoi veramente uscire dal sistema?</div>',
         showDenyButton: true,
