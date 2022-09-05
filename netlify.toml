@@ -1,6 +1,14 @@
 [build]
 command = "npm run build"
-publish = "build/"
+publish = "/dist"
+
+[functions]
+	node_bundler = "esbuild"
 
 [context.production.environment]
-VITE_DOMAIN = "da_inserire.com"
+VITE_DOMAIN = "https://pierpaolosestito.pythonanywhere.com"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
