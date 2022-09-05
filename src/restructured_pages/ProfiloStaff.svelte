@@ -1,6 +1,6 @@
 <script lang="ts">
     import {Card,CardBody,CardHeader,CardTitle,CardSubtitle,Alert,Col,Row,Image,Badge,Button} from 'sveltestrap';
-    import {consts} from "../lib/consts";
+    //import {consts} from "../lib/consts";
     import "../lib/scripts/profilostaff.ts";
     let radioGroup;
     let selected = "Ciao";
