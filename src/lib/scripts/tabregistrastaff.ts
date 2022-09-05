@@ -1,5 +1,5 @@
 import {consts} from "../consts";
-import * as $ from 'jquery';
+import $ from 'jquery';
 /*window.addEventListener("load",function(){
 	var jQueryScript = document.createElement('script');
 
