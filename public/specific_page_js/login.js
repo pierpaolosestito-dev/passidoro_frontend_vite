@@ -2,7 +2,7 @@
 
 
 
-import {consts} from "../../src/lib/consts";
+import {consts} from "../../src/lib/consts.js";
 
 /*window.addEventListener("load",function(){
 	var jQueryScript = document.createElement('script');
