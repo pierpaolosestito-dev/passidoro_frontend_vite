@@ -15,6 +15,7 @@
     "vite": "^3.0.7"
   },
   "dependencies": {
+    "@netlify/zip-it-and-ship-it": "^6.0.0",
     "axios": "^0.27.2",
     "dotenv": "^16.0.2",
     "svelte-routing": "^1.6.0",
