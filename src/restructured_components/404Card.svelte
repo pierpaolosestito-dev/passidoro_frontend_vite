@@ -1,6 +1,7 @@
 <script lang="ts">
     import {Card,CardHeader,CardTitle,CardSubtitle,CardBody,CardFooter,Image} from 'sveltestrap';
     export let type;
+    import "../lib/scripts/404errorpage.ts";
 </script>
 
 
@@ -31,8 +32,8 @@
 </Card>
 {/if}
 <svelte:head>
-    <script src="/specific_page_js/404errorpage.js"></script>
-    <script src="/specific_page_js/404errorpage.js"></script>
+    <!--<script src="/specific_page_js/404errorpage.js"></script>-->
+    
     <style>
         #special-404{
             max-width: 100%;

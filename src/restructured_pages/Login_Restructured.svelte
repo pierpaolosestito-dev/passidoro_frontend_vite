@@ -1,7 +1,7 @@
 <script lang="ts">
     import Navbar_Restructured from "../restructured_components/Navbar_Restructured.svelte"
     import {Container,Row,Card,CardBody,CardFooter,CardHeader,Alert,CardTitle,FormText,InputGroup,Input,InputGroupText,Image,Form,} from 'sveltestrap';
-	import "../lib/scripts/login.ts";
+    import '../lib/scripts/login.ts';
 </script>
 
 <Navbar_Restructured/>

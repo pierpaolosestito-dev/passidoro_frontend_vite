@@ -6,7 +6,7 @@
     import axios from 'axios';
   import {onMount} from 'svelte';
 import {consts} from '../lib/consts';
-import { identity } from 'svelte/internal';
+import '../lib/scripts/report_form.ts';
   let parameters = new URLSearchParams(window.location.search);
   console.log(parameters.get("ID"));
     let IDn= parameters.get("ID")
@@ -173,5 +173,5 @@ import { identity } from 'svelte/internal';
     
     <link rel="stylesheet" href="/restructured_css/card.css"/>
     <link rel="stylesheet" href="/specific_page_css/report_form.css"/>
-    <script type="module" src="/specific_page_js/report_form.js"></script>
+    <!--<script type="module" src="/specific_page_js/report_form.js"></script>-->
 </svelte:head>

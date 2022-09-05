@@ -1,13 +1,12 @@
 <script lang="ts">
     import Navbar_Restructured from '../restructured_components/Navbar_Restructured.svelte';
     import {Spinner,Card,CardHeader,CardTitle,CardBody,Row,Col,Table} from 'sveltestrap';
-    import CardSezioneRestructured from '../restructured_components/CardSezione_Restructured.svelte';
     import ErrorCard from '../restructured_components/404Card.svelte';
     import { onMount , afterUpdate} from 'svelte';
 	import {Column, Icon } from 'sveltestrap';
 	import axios, { Axios} from 'axios';
   import {consts} from "../lib/consts";
-
+  import '../lib/scripts/gestionesezioni.ts';
 
     let search = undefined;
   let users=[]
@@ -139,6 +138,6 @@
     <link rel="stylesheet" href="/restructured_css/card.css"/>
     <link rel="stylesheet" href="/restructured_css/button.css"/>
     <link rel="stylesheet" href="/specific_page_css/gestione_sezioni.css"/>
-    <script type="module" src="/specific_page_js/gestionesezioni.js"></script>
+    <!--<script type="module" src="/specific_page_js/gestionesezioni.js"></script>-->
     
 </svelte:head>

@@ -2,6 +2,7 @@
     import Navbar_Restructured from '../restructured_components/Navbar_Restructured.svelte';
     import TabRegistraStaff from '../restructured_components/restructured_tab/TabRegistraStaff.svelte';
     import {TabContent,TabPane} from 'sveltestrap';
+    
     import TabListaStaff from '../restructured_components/restructured_tab/TabListaStaff.svelte';
 </script>
 

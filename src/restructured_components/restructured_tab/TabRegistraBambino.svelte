@@ -2,6 +2,7 @@
     import {Container,Col,Row,Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardTitle,Image,Badge,Form,FormGroup,Input,InputGroup,InputGroupText,Label,Button} from 'sveltestrap';
    
     let radioGroup;
+    import "../../lib/scripts/tabregistrabambino.ts";
 
 </script>
 
@@ -66,7 +67,7 @@
             </Row>
             <Row id="row">
                 <Label for="seleziona-sezione">SEZIONE: <Badge color="info" id="yl-badge">OBBLIGATORIO</Badge> </Label>
-                <Input type="select" name="sezione" id="sezione">
+                <Input type="select" name="sezione" id="sezione-select">
                     <option>Cuccioli</option>
                     <option>Coccinelle</option>
                     <option>Orsetti</option>
@@ -85,7 +86,7 @@
                 <Badge class="badgeEmails" pill color="#c00">Tutti i dati anagrafici sono obbligatori <br> Assicurati anche di aver inserito almeno una delle due e-mail</Badge>
             </Row>
             <Row id="row">
-                <button style="display:block;margin:auto;max-width:180px" class="hd-button" id="registra-btn">Registra bambino <i class="fa fa-check" aria-hidden="true"></i></button>
+                <button style="display:block;margin:auto;max-width:180px" class="hd-button" id="registraa-btn">Registra bambino <i class="fa fa-check" aria-hidden="true"></i></button>
             </Row>
             
         </Col>
@@ -93,7 +94,7 @@
 </Card>
 
 <svelte:head>
-    <script type="module" src="/specific_page_js/tabregistrabambino.js"></script>
+    <!--<script type="module" src="/specific_page_js/tabregistrabambino.js"></script>-->
    
     <link rel="stylesheet" href="/restructured_css/card.css">
     <link rel="stylesheet" href="/specific_page_css/tabregistrabambino.css">

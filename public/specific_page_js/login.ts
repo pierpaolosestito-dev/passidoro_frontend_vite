@@ -2,7 +2,7 @@
 
 
 
-import {consts} from "../consts.js";
+import {consts} from "../../src/lib/consts.js";
 
 /*window.addEventListener("load",function(){
 	var jQueryScript = document.createElement('script');
@@ -49,7 +49,7 @@ $(document).on('click', '#enter-btn', function(){
       title:"Caricamento in corso",
       imageUrl:"../media_resources/loader_resources/cat_loader.gif",
       didOpen: function(){
-        console.log(consts.DOMAIN);
+
         const login_data = {'email':$('#email').val(),"password":$('#password').val()}
         axios.post(consts.DOMAIN+"/auth/login/", login_data)
         .then(response => {

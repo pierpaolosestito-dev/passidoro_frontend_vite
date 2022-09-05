@@ -1,6 +1,6 @@
 <script lang="ts">
     import {Container,Col,Row,Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardTitle,Image,Badge,Form,FormGroup,Input,InputGroup,InputGroupText,Label,Button} from 'sveltestrap';
-
+    import '../../lib/scripts/tabregistrastaff.ts';
     let radioGroup;
 
 </script>
@@ -82,10 +82,10 @@
 </Card>
 
 <svelte:head>
-    <script type="module" src="/specific_page_js/tabregistrastaff.js"></script>
+    <!--<script type="module" src="/specific_page_js/tabregistrastaff.js"></script>-->
     <link rel="stylesheet" href="/restructured_css/button.css">
     <link rel="stylesheet" href="/restructured_css/card.css">
     <link rel="stylesheet" href="/specific_page_css/tabregistrabambino.css">
- 
+   
   
 </svelte:head>

@@ -1,6 +1,7 @@
 <script lang="ts">
     import Navbar_Restructured from '../restructured_components/Navbar_Restructured.svelte';
     import {Container,Card,CardHeader,CardTitle,CardBody,FormGroup,Label,Input,Alert,InputGroup,Button,Row,Col,FormText} from 'sveltestrap';
+    import '../lib/scripts/comunicazioni.ts';
 </script>
 
 <Navbar_Restructured/>
@@ -51,7 +52,7 @@
 </Card>
 
 <svelte:head>
-    <script type="module" src="/specific_page_js/comunicazioni.js"></script>
+    <!--<script type="module" src="/specific_page_js/comunicazioni.js"></script>-->
     <link rel="stylesheet" href="/restructured_css/card.css">
     <link rel="stylesheet" href="/specific_page_css/comunicazioni.css">
 </svelte:head>
