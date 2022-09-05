@@ -2,7 +2,7 @@
 
 
 
-import {consts} from "../../src/lib/consts";
+//import {consts} from "../../src/lib/consts";
 
 /*window.addEventListener("load",function(){
 	var jQueryScript = document.createElement('script');
@@ -51,7 +51,7 @@ $(document).on('click', '#enter-btn', function(){
       didOpen: function(){
 
         const login_data = {'email':$('#email').val(),"password":$('#password').val()}
-        axios.post(consts.DOMAIN+"/auth/login/", login_data)
+        axios.post("https://pierpaolosestito.pythonanywhere.com"+"/auth/login/", login_data)
         .then(response => {
           console.log(response.data);
           console.log(response.data.key);

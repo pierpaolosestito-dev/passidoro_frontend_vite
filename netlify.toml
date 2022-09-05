@@ -3,7 +3,6 @@ command = "npm run build"
 publish = "/dist"
 
 [functions]
-directory = "public/specific_page_js"
 node_bundler = "esbuild"
 
 [context.production.environment]
