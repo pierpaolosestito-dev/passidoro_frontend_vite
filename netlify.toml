@@ -1,6 +1,6 @@
 [build]
 command = "npm run build"
-publish = "dist/assets/"
+publish = "/dist"
 
 [context.production.environment]
 VITE_DOMAIN = "https://pierpaolosestito.pythonanywhere.com"
