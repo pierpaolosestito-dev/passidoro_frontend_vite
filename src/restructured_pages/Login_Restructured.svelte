@@ -35,7 +35,7 @@
     
     <link rel="stylesheet" href="/restructured_css/card.css">
     <link rel="stylesheet" href="/specific_page_css/login.css">
-    <script type="module" src="public/specific_page_js/login.js"></script>
+    <script src="/specific_page_js/login.js"></script>
     <style>
         .ciao{
             border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
