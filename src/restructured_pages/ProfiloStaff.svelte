@@ -1,6 +1,6 @@
 <script lang="ts">
     import {Card,CardBody,CardHeader,CardTitle,CardSubtitle,Alert,Col,Row,Image,Badge,Button} from 'sveltestrap';
-    //import {consts} from "../lib/consts";
+    import {consts} from "../lib/consts";
     import "../lib/scripts/profilostaff.ts";
     let radioGroup;
     let selected = "Ciao";
@@ -28,7 +28,7 @@
   onMount(async () => {
     try {
         
-            const res = await axios({method:'get',url:'pierpaolosestito.pythonanywhere.com/singolo_staff',headers:{'CUSTOM-OPTION':IDn,'Authorization':'Token ' + sessionStorage.getItem("key")}});
+            const res = await axios({method:'get',url:consts.DOMAIN+'/singolo_staff',headers:{'CUSTOM-OPTION':IDn,'Authorization':'Token ' + sessionStorage.getItem("key")}});
             console.log(res.data);
             if(res.data != "Il profilo non esiste"){
                 document.getElementById('nome-staff').innerText = res.data.first_name;

@@ -20,6 +20,7 @@ $(document).on('click', '#edit-btn', function(){
    // let first_iteration=false;
     for(let i=0;(i+i+1)<size;i++){
         var k=i;
+		
         var oggetto = {'Nome':table.getElementsByTagName("td")[i+i].innerText,"Email_Rappresentante":table.getElementsByTagName("td")[i+i+1].innerText}
         arraydatioff.push(oggetto);
         console.log("Nome",i+i);
