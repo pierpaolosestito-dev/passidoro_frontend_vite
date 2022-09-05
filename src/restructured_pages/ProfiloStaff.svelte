@@ -28,7 +28,7 @@
   onMount(async () => {
     try {
         
-            const res = await axios({method:'get',url:consts.DOMAIN+'/singolo_staff',headers:{'CUSTOM-OPTION':IDn,'Authorization':'Token ' + sessionStorage.getItem("key")}});
+            const res = await axios({method:'get',url:'pierpaolosestito.pythonanywhere.com/singolo_staff',headers:{'CUSTOM-OPTION':IDn,'Authorization':'Token ' + sessionStorage.getItem("key")}});
             console.log(res.data);
             if(res.data != "Il profilo non esiste"){
                 document.getElementById('nome-staff').innerText = res.data.first_name;
