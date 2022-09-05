@@ -4,3 +4,8 @@ publish = "dist/assets/"
 
 [context.production.environment]
 VITE_DOMAIN = "https://pierpaolosestito.pythonanywhere.com"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
