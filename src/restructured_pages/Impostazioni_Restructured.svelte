@@ -2,7 +2,7 @@
     import Navbar_Restructured from '../restructured_components/Navbar_Restructured.svelte';
     import {Container,Card,CardBody,CardHeader,CardTitle,CardSubtitle,FormText,Col,Row,Image,Badge,Button,InputGroup,InputGroupText,Input} from 'sveltestrap';
     import {onMount} from 'svelte';
-    //import "../lib/scripts/impostazioni_profilo.ts";
+    import "../lib/scripts/impostazioni_profilo.ts";
 
   
  
@@ -90,7 +90,7 @@
             
         });
     </script>
-    <script type="module" src="/specific_page_js/impostazioni_profilo.js"></script>
+    <!--<script type="module" src="/specific_page_js/impostazioni_profilo.js"></script>-->
     <link rel="stylesheet" href="/restructured_css/card.css"/>
     <link rel="stylesheet" href="/specific_page_css/impostazioni.css"/>
 </svelte:head>
