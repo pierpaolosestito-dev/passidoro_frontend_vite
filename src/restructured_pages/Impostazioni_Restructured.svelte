@@ -90,9 +90,7 @@
             
         });
     </script>
-    <script type="module" src="../specific_page_js/impostazioni_profilo.js"></script>
-    <link rel="stylesheet" href="../restructured_css/card.css"/>
-    <link rel="stylesheet" href="../specific_page_css/impostazioni.css"/>
-    <link rel="stylesheet" href="../restructured_css/button.css"/>
-
+    <script type="module" src="/specific_page_js/impostazioni_profilo.js"></script>
+    <link rel="stylesheet" href="/restructured_css/card.css"/>
+    <link rel="stylesheet" href="/specific_page_css/impostazioni.css"/>
 </svelte:head>

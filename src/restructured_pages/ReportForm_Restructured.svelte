@@ -170,9 +170,8 @@ import { identity } from 'svelte/internal';
             margin-top:10px;
         }
     </style>
-    <link rel="stylesheet" href="../restructured_css/navbar.css"/>
-    <link rel="stylesheet" href="../restructured_css/card.css"/>
-    <link rel="stylesheet" href="../restructured_css/button.css"/>
-    <link rel="stylesheet" href="../specific_page_css/report_form.css"/>
-    <script type="module" src="../specific_page_js/report_form.js"></script>
+    
+    <link rel="stylesheet" href="/restructured_css/card.css"/>
+    <link rel="stylesheet" href="/specific_page_css/report_form.css"/>
+    <script type="module" src="/specific_page_js/report_form.js"></script>
 </svelte:head>

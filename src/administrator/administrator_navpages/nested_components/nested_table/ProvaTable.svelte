@@ -5,7 +5,7 @@
   import { onMount,beforeUpdate} from 'svelte';
 	import axios from 'axios';
   import {consts} from "../../../../lib/consts";
-import ProfiloBambino from '../../../ProfiloBambino.svelte';
+
 
 import CardSezioneRestructured from '../../../../restructured_components/CardSezione_Restructured.svelte';
 	let search = undefined;
@@ -106,7 +106,7 @@ const colors = [
   <CardBody>
     <Table id="tabellabambini" name={sezione} responsive striped rows={visibleUsers} let:row={user}>
       <Column  header="Avatar">
-        <Image id="defaultAvatar" class="defaultAvatar" src="http://127.0.0.1:8000/testingfile/{user.Avatar}/{sessionStorage.getItem("key")}"/>
+        <Image id="defaultAvatar" class="defaultAvatar" src="http://127.0.0.1:8000/filestorage/{user.Avatar}/{sessionStorage.getItem("key")}"/>
       </Column>
         <Column header="Nome">
         {#if user.Inviato == 0 && user.Orario_uscita.split(":")[0] < today.getHours()}
@@ -216,7 +216,7 @@ const colors = [
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-  <script type="module" src="../specific_page_js/tabellabambinisezione.js"></script>
+  <script type="module" src="/specific_page_js/tabellabambinisezione.js"></script>
   <style>
     #remove-btn{
     border: solid 7px red /* #41403e;*/

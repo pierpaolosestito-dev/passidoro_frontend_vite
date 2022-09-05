@@ -14,7 +14,7 @@
 Image } from 'sveltestrap';
       import TabBambiniExcel from '../restructured_components/restructured_tab/TabBambiniExcel.svelte';
       import TabRegistraBambino from '../restructured_components/restructured_tab/TabRegistraBambino.svelte';
-    import RegistraBambino from './RegistraBambino.svelte';
+    
     import Prova2 from './administrator_navpages/Prova2.svelte';
     import Navbar_Restructured from '../restructured_components/Navbar_Restructured.svelte';
 
@@ -86,7 +86,7 @@ Image } from 'sveltestrap';
         }
     </style>
     <script src="https://unpkg.com/read-excel-file@4.x/bundle/read-excel-file.min.js"></script>
-    <link rel="stylesheet" href="../specific_page_css/gestione_bambini.css"/>
+    <link rel="stylesheet" href="/specific_page_css/gestione_bambini.css"/>
     <script>
       var input = document.getElementById("excelfile-input");
       input.addEventListener('change',function(){

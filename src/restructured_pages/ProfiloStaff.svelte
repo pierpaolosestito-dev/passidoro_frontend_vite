@@ -100,9 +100,8 @@
         }
         
     </style>
-    <script type="module" src="../specific_page_js/profilostaff.js"></script>
+    <script type="module" src="/specific_page_js/profilostaff.js"></script>
 
- <link rel="stylesheet" href="../restructured_css/card.css">
- <link rel="stylesheet" href="../restructured_css/button.css">
- <link rel="stylesheet" href="../specific_page_css/profilo_bambino.css">
+ <link rel="stylesheet" href="/restructured_css/card.css">
+ <link rel="stylesheet" href="/specific_page_css/profilo_bambino.css">
   </svelte:head>

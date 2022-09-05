@@ -6,7 +6,7 @@
 
 <Navbar class="hd-navbar" light expand="md">
     <NavbarBrand href="/">
-      <Image class="brand" src="../../fourth_logo.png"/>
+      <Image class="brand" src="/fourth_logo.png"/>
     </NavbarBrand>
     <NavbarToggler on:click={toggle} class="me-2" />
     <Collapse {isOpen} navbar expand="md">
@@ -23,7 +23,7 @@
   </Navbar>
 
   <svelte:head>
-    <link rel="stylesheet" href="../restructured_css/navbar.css">
-    <link rel="stylesheet" href="../restructured_css/button.css">
-    <script src="../specific_page_js/navbar.js"></script>
+    <link rel="stylesheet" href="/restructured_css/navbar.css">
+    <link rel="stylesheet" href="/restructured_css/button.css">
+    <script src="/specific_page_js/navbar.js"></script>
   </svelte:head>

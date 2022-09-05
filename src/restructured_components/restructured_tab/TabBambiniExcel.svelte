@@ -1,6 +1,4 @@
 <script lang="ts">
-
-
     import {Card,CardHeader,CardTitle,CardBody,Image,CardText,Input,Fade,Button} from 'sveltestrap';
     let isOpen = false;
 </script>
@@ -49,9 +47,9 @@
             margin-left:10px;
         }
     </style>
-    <link rel="stylesheet" href="../restructured_css/card.css"/>
-    <link rel="stylesheet" href="../tab_css/tab_excel.css"/>
+    <link rel="stylesheet" href="/restructured_css/card.css"/>
+    <link rel="stylesheet" href="/specific_page_css/tab_excel.css"/>
     <!--Da aggiungere lo script-->
     <script src="https://unpkg.com/read-excel-file@4.x/bundle/read-excel-file.min.js"></script>
-    <script type="module" src="../specific_page_js/tabbambiniexcel.js"></script>
+    <script type="module" src="/specific_page_js/tabbambiniexcel.js"></script>
 </svelte:head>

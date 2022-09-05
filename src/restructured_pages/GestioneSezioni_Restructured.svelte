@@ -136,9 +136,9 @@
 {/if}
 <svelte:head>
     
-    <link rel="stylesheet" href="../restructured_css/card.css"/>
-    <link rel="stylesheet" href="../restructured_css/button.css"/>
-    <link rel="stylesheet" href="../specific_page_css/gestione_sezioni.css"/>
-    <script type="module" src="../specific_page_js/gestionesezioni.js"></script>
+    <link rel="stylesheet" href="/restructured_css/card.css"/>
+    <link rel="stylesheet" href="/restructured_css/button.css"/>
+    <link rel="stylesheet" href="/specific_page_css/gestione_sezioni.css"/>
+    <script type="module" src="/specific_page_js/gestionesezioni.js"></script>
     
 </svelte:head>

@@ -26,5 +26,5 @@
   </TabContent>
 
 <svelte:head>
-    <link rel="stylesheet" href="../specific_page_css/gestione_staff.css"/>
+    <link rel="stylesheet" href="/specific_page_css/gestione_staff.css"/>
 </svelte:head>

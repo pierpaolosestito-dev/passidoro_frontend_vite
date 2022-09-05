@@ -32,11 +32,10 @@
 </Card>
 
 <svelte:head>
-    <link rel="stylesheet" href="../restructured_css/navbar.css">
-    <link rel="stylesheet" href="../restructured_css/button.css">
-    <link rel="stylesheet" href="../restructured_css/card.css">
-    <link rel="stylesheet" href="../specific_page_css/login.css">
-    <script type="module" src="../specific_page_js/login.js"></script>
+    
+    <link rel="stylesheet" href="/restructured_css/card.css">
+    <link rel="stylesheet" href="/specific_page_css/login.css">
+    <script type="module" src="/specific_page_js/login.js"></script>
     <style>
         .ciao{
             border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;

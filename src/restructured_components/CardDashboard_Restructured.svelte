@@ -80,7 +80,7 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
 {/if}
 
 <svelte:head>
-    <link rel="stylesheet" href="../restructured_css/button.css">
-    <link rel="stylesheet" href="../restructured_css/card.css">
-    <link rel="stylesheet" href="../restructured_css/card_dashboard.css">
+    <link rel="stylesheet" href="/restructured_css/button.css">
+    <link rel="stylesheet" href="/restructured_css/card.css">
+    <link rel="stylesheet" href="/restructured_css/card_dashboard.css">
 </svelte:head>

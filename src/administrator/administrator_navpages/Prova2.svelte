@@ -235,6 +235,6 @@ $("#checkbox6").change(function() {
      
       
     </style>
-    <script src="../specific_page_js/tabgestionebambini.js"></script>
-    <link rel="stylesheet" href="../restructured_css/card.css">
+    <script src="/specific_page_js/tabgestionebambini.js"></script>
+    <link rel="stylesheet" href="/restructured_css/card.css">
 </svelte:head>

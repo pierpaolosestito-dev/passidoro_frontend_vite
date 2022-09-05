@@ -49,8 +49,8 @@ import axios from 'axios';
 </Card>
 {/if}
 <svelte:head>
-    <script src="../specific_page_js/gestione_sezioni.js"></script>
-    <link rel="stylesheet" href="../restructured_css/card.css"/>
-    <link rel="stylesheet" href="../restructured_css/button.css"/>
-    <link rel="stylesheet" href="../specific_page_css/gestione_sezioni.css"/>
+    <script src="/specific_page_js/gestione_sezioni.js"></script>
+    <link rel="stylesheet" href="/restructured_css/card.css"/>
+    <link rel="stylesheet" href="/restructured_css/button.css"/>
+    <link rel="stylesheet" href="/specific_page_css/gestione_sezioni.css"/>
 </svelte:head>

@@ -179,8 +179,8 @@
         }
     </style>
    
-    <link rel="stylesheet" href="../restructured_css/button.css">
-    <link rel="stylesheet" href="../restructured_css/card.css">
-    <link rel="stylesheet" href="../specific_page_css/tabregistrabambino.css">
+    <link rel="stylesheet" href="/restructured_css/button.css">
+    <link rel="stylesheet" href="/restructured_css/card.css">
+    <link rel="stylesheet" href="/specific_page_css/tabregistrabambino.css">
  </svelte:head>
   

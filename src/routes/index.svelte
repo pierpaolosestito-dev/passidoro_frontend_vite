@@ -10,7 +10,7 @@
     
     import Prova2 from '../administrator/administrator_navpages/Prova2.svelte';
     import ProfiloStaff from '../restructured_pages/ProfiloStaff.svelte';
-  
+
     import ProfiloBambino2 from '../administrator/ProfiloBambino2.svelte';
     import GestioneStaffRestructured from '../restructured_pages/GestioneStaff_Restructured.svelte';
 
@@ -145,32 +145,4 @@ import ErrorPage from '../restructured_components/404ErrorPage.svelte';
         <ProfiloStaff/>
         {/if}
       </Route>
-      
-      <!--
-      <Route path="/" component={Login_Restructured} />
-      <Route path="/a" component={Testing} />
-      <Route path="/cm\d+" component={Login_Restructured}/>
-      <Route path="cm" component={Communications_Restructured} />
-      
-      
-    
-  
-    
-    <Route path="admin/gestioneSezioni" component={GestioneSezione} />
-    <Route path="admin/gestioneSezioni2" component={GestioneSezioniRestructured} />
-    <Route path="reportform" component={ReportForm_Restructured} />
-    <Route path="admin/gestioneBambini">
-    <GestioneBambini/>
-    </Route>
-    <Route path="admin/gestioneStaff">
-      <GestioneStaffRestructured/>
-      </Route>
-    <Route path="maestra/gestioneBambini">
-        <Prova usertype={"Maestra"}/>
-    </Route>
-    </div>
-    <Route path="profiloBambino" component={ProfiloBambino}/>
-    <Route path="profiloBambino2" component={ProfiloBambino2}/>
-    <Route path="profiloStaff" component={ProfiloStaff}/>
-    <Route path="tesi_pierpaolo/card_eg" component={CardEg}/>-->
   </Router>

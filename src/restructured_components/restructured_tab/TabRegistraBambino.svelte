@@ -93,10 +93,10 @@
 </Card>
 
 <svelte:head>
-    <script type="module" src="../specific_page_js/tabregistrabambino.js"></script>
-    <link rel="stylesheet" href="../restructured_css/button.css">
-    <link rel="stylesheet" href="../restructured_css/card.css">
-    <link rel="stylesheet" href="../specific_page_css/tabregistrabambino.css">
+    <script type="module" src="/specific_page_js/tabregistrabambino.js"></script>
+   
+    <link rel="stylesheet" href="/restructured_css/card.css">
+    <link rel="stylesheet" href="/specific_page_css/tabregistrabambino.css">
  
     <script>
         console.log(document.getElementById('email-padre').validity.valid);

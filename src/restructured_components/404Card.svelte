@@ -31,15 +31,9 @@
 </Card>
 {/if}
 <svelte:head>
-    <script src="./specific_page_js/404errorpage.js"></script>
-    <script src="../specific_page_js/404errorpage.js"></script>
+    <script src="/specific_page_js/404errorpage.js"></script>
+    <script src="/specific_page_js/404errorpage.js"></script>
     <style>
-        /*#special-card-body{
-             background-image: url("../media_resources/error_resources/904_error.jpg");
-            background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-        }*/
         #special-404{
             max-width: 100%;
     max-height: 100%;

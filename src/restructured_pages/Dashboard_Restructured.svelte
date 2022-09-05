@@ -47,6 +47,6 @@
 </main>
 
 <svelte:head>
-    <link rel="stylesheet" href="../restructured_css/navbar.css">
-    <link rel="stylesheet" href="../restructured_css/card.css">
+    <link rel="stylesheet" href="/restructured_css/navbar.css">
+    <link rel="stylesheet" href="/restructured_css/card.css">
   </svelte:head>

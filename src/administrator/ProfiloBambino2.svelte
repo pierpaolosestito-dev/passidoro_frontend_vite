@@ -69,7 +69,7 @@
                     if(document.getElementById('email-madre')!=null)
                     document.getElementById('email-madre').innerText = response.data[0].Email_Genitore2;
                     if(document.getElementById('defaultAvatar')!=null)
-                    document.getElementById('defaultAvatar').src = "http://127.0.0.1:8000/testingfile/"+response.data[0].Avatar+"/"+sessionStorage.getItem("key");
+                    document.getElementById('defaultAvatar').src = "http://127.0.0.1:8000/filestorage/"+response.data[0].Avatar+"/"+sessionStorage.getItem("key");
                 }
                 
             });
@@ -98,7 +98,7 @@
       <CardSubtitle>Dati inerenti al bambino</CardSubtitle>
     </CardHeader>
     <CardBody>
-        <Image id="defaultAvatar" class="defaultAvatar" alt="defaultAvatar" src="http://127.0.0.1:8000/testingfile/default-avatar"/>
+        <Image id="defaultAvatar" class="defaultAvatar" alt="defaultAvatar" src="http://127.0.0.1:8000/filestorage/default-avatar"/>
         <Alert color='warning'>
         <Col>
             <Row>
@@ -194,9 +194,9 @@
             max-width:800px;
         }
     </style>
-    <script type="module" src="../specific_page_js/profilo_bambino2.js"></script>
+    <script type="module" src="/specific_page_js/profilo_bambino2.js"></script>
 
- <link rel="stylesheet" href="../restructured_css/card.css">
- <link rel="stylesheet" href="../restructured_css/button.css">
- <link rel="stylesheet" href="../specific_page_css/profilo_bambino.css">
+ <link rel="stylesheet" href="/restructured_css/card.css">
+ <link rel="stylesheet" href="/restructured_css/button.css">
+ <link rel="stylesheet" href="/specific_page_css/profilo_bambino.css">
   </svelte:head>

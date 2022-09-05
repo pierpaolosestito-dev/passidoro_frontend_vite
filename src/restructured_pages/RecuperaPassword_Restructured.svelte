@@ -93,8 +93,8 @@
 </Card>
 
 <svelte:head>
-        <script type="module" src="../specific_page_js/recupera_password.js"></script>
-        <link rel="stylesheet" href="../restructured_css/card.css"/>
-        <link rel="stylesheet" href="../restructured_css/button.css"/>
-        <link rel="stylesheet" href="../specific_page_css/recupera_password.css"/>
+        <script type="module" src="/specific_page_js/recupera_password.js"></script>
+        <link rel="stylesheet" href="/restructured_css/card.css"/>
+        <link rel="stylesheet" href="/restructured_css/button.css"/>
+        <link rel="stylesheet" href="/specific_page_css/recupera_password.css"/>
     </svelte:head>

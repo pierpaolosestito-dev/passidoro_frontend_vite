@@ -13,13 +13,14 @@ import {consts} from "../../src/lib/consts";
 var avatarModificato = false;
 var avatar = "";
 let oldTime;
-
+let imagePrePut = $('#defaultAvatar').attr('src');
 let parameters = new URLSearchParams(window.location.search);
 console.log(parameters.get("ID"));
   let IDn= parameters.get("ID")
 
        
 $(document).on('click', '#editButton', function(){ 
+    alert(imagePrePut);
     $('#hiddenRow').show();
     $('#hiddenRow2').show();
     $('#badge').show();
@@ -32,6 +33,7 @@ $(document).on('click', '#editButton', function(){
   });
   
   $(document).on('click', '#confirmButton', function(){ 
+
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
 
     var email_padre = $("#email-padre").text();
@@ -257,7 +259,7 @@ $('#confirmButton').prop("disabled", true);
 });
 
 $(document).on('click', '#formatimg', function(){ 
-  $('#defaultAvatar').attr("src", "https://t3.ftcdn.net/jpg/01/28/56/34/360_F_128563455_bGrVZnfDCL0PxH1sU33NpOhGcCc1M7qo.jpg");
+  $('#defaultAvatar').attr("src", imagePrePut);
   $('#confirmButton').prop("disabled", false);
   avatar = "default-avatar";
   $('#formatimg').fadeOut();
