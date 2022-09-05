@@ -1,5 +1,5 @@
 import {consts} from "../consts";
-
+import * as $ from 'jquery';
 /*window.addEventListener("load",function(){
 	var jQueryScript = document.createElement('script');
 	jQueryScript.setAttribute('src','https://unpkg.com/sweetalert/dist/sweetalert.min.js');

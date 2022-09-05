@@ -1,4 +1,4 @@
-
+import * as $ from 'jquery';
 import {consts} from "../consts";
 
 /*window.addEventListener("load",function(){

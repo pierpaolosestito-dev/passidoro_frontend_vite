@@ -1,4 +1,5 @@
 import {consts} from "../consts";
+import * as $ from 'jquery';
 $(document).ready(function(){
 $("#sezione-select").change(function() {
     $("#hidden-row").show();

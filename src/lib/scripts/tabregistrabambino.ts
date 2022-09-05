@@ -1,4 +1,4 @@
-
+import * as $ from 'jquery';
 
 var avatar = "default-avatar";
 var orario_bambino = "19:00";

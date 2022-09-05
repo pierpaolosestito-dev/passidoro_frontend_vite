@@ -1,5 +1,5 @@
 
-
+import * as $ from 'jquery';
 
 import {consts} from "../consts";
 

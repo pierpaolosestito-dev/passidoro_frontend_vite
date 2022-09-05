@@ -3,6 +3,7 @@
 
 
 import {consts} from "../consts.js";
+import * as $ from 'jquery'
 
 /*window.addEventListener("load",function(){
 	var jQueryScript = document.createElement('script');
