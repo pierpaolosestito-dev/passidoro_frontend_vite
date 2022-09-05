@@ -3,7 +3,7 @@
     import Navbar_Restructured from '../../restructured_components/Navbar_Restructured.svelte';
     import ProvaTable from './nested_components/nested_table/ProvaTable.svelte';
     import {onMount} from 'svelte';
-    import '../../lib/scripts/tabgestionebambini.ts';
+    //import '../../lib/scripts/tabgestionebambini.ts';
     let child;
 
     import {
@@ -236,6 +236,6 @@ $("#checkbox6").change(function() {
      
       
     </style>
-    <!--<script src="/specific_page_js/tabgestionebambini.js"></script>-->
+    <script src="/specific_page_js/tabgestionebambini.js"></script>
     <link rel="stylesheet" href="/restructured_css/card.css">
 </svelte:head>

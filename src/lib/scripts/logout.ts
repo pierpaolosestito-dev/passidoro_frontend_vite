@@ -1,5 +1,4 @@
 import {consts} from '../consts';
-import * as $ from 'jquery'
 $(document).on('click', '#logout', function(){ 
     /**/
     if(sessionStorage.getItem("key")==null){

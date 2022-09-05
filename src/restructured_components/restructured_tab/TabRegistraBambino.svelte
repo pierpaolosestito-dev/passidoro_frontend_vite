@@ -2,7 +2,7 @@
     import {Container,Col,Row,Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardTitle,Image,Badge,Form,FormGroup,Input,InputGroup,InputGroupText,Label,Button} from 'sveltestrap';
    
     let radioGroup;
-    import "../../lib/scripts/tabregistrabambino.ts";
+    //import "../../lib/scripts/tabregistrabambino.ts";
 
 </script>
 
@@ -94,7 +94,7 @@
 </Card>
 
 <svelte:head>
-    <!--<script type="module" src="/specific_page_js/tabregistrabambino.js"></script>-->
+    <script type="module" src="/specific_page_js/tabregistrabambino.js"></script>
    
     <link rel="stylesheet" href="/restructured_css/card.css">
     <link rel="stylesheet" href="/specific_page_css/tabregistrabambino.css">

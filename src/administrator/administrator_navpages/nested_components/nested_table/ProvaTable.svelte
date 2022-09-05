@@ -5,7 +5,7 @@
   import { onMount,beforeUpdate} from 'svelte';
 	import axios from 'axios';
   import {consts} from "../../../../lib/consts";
-  import "../../../../lib/scripts/tabellabambinisezione.ts";
+  //import "../../../../lib/scripts/tabellabambinisezione.ts";
 
 
 	let search = undefined;
@@ -216,7 +216,7 @@ const colors = [
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-  <!--<script type="module" src="/specific_page_js/tabellabambinisezione.js"></script>-->
+  <script type="module" src="/specific_page_js/tabellabambinisezione.js"></script>
   <style>
     #remove-btn{
     border: solid 7px red /* #41403e;*/

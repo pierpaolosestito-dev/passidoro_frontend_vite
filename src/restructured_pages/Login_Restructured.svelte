@@ -1,7 +1,7 @@
 <script lang="ts">
     import Navbar_Restructured from "../restructured_components/Navbar_Restructured.svelte"
     import {Container,Row,Card,CardBody,CardFooter,CardHeader,Alert,CardTitle,FormText,InputGroup,Input,InputGroupText,Image,Form,} from 'sveltestrap';
-    import '../lib/scripts/login.ts';
+    //import '../lib/scripts/login.ts';
 </script>
 
 <Navbar_Restructured/>
@@ -35,7 +35,7 @@
     
     <link rel="stylesheet" href="/restructured_css/card.css">
     <link rel="stylesheet" href="/specific_page_css/login.css">
-    <!--<script type="module" src="/specific_page_js/login.js"></script>-->
+    <script type="module" src="/specific_page_js/login.js"></script>
     <style>
         .ciao{
             border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;

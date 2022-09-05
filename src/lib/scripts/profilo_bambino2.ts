@@ -1,5 +1,5 @@
 
-import * as $ from 'jquery';
+
 
 import {consts} from "../consts";
 
@@ -141,15 +141,14 @@ $(document).on('click', '#editButton', function(){
         Swal.fire({
           title:'<div style="background-color:#fff">Il bambino rimarrà registrato nel sistema!</div>', 
           icon:'success',
-          //background:'url("../media_resources/alert_resources/alert_background.jpg")'
-		  });
+          background:'url("../media_resources/alert_resources/alert_background.jpg")'});
       } else if (result.isDenied) {
 
         Swal.fire({
           title:'<div style="background-color:#fff">Inserisci la password.</div>', 
           icon:'info',
           input:'password',
-          //background:'url("../media_resources/alert_resources/alert_background.jpg")',
+          background:'url("../media_resources/alert_resources/alert_background.jpg")',
           preConfirm:(password)=>{
 
         Swal.fire({

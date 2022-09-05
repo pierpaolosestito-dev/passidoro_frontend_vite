@@ -1,5 +1,4 @@
 import {consts} from "../consts";
-import * as $ from 'jquery';
 /*window.addEventListener("load",function(){
 	var jQueryScript = document.createElement('script');
   jQueryScript.setAttribute('src','https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js');
@@ -114,8 +113,7 @@ $(document).on('click', '#remove-btn', function(){
                     
                 }})
                 },
-                //background:'url("../media_resources/alert_resources/alert_background.jpg")'
-				});
+                background:'url("../media_resources/alert_resources/alert_background.jpg")'});
               
             
   

@@ -2,7 +2,7 @@
     import {Collapse,Navbar,NavbarToggler,Nav,NavLink,NavbarBrand,NavItem,Image,Button} from 'sveltestrap';
     let isOpen = false;
   const toggle = () => (isOpen = !isOpen);
-  import "../lib/scripts/logout.ts";
+  //import "../lib/scripts/logout.ts";
     </script>
 
 <Navbar class="hd-navbar" light expand="md">
@@ -26,5 +26,5 @@
   <svelte:head>
     <link rel="stylesheet" href="/restructured_css/navbar.css">
     <link rel="stylesheet" href="/restructured_css/button.css">
-    <!--<script src="/specific_page_js/navbar.js"></script>-->
+    <script src="/specific_page_js/navbar.js"></script>
   </svelte:head>
