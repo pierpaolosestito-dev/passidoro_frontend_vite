@@ -113,7 +113,8 @@ $(document).on('click', '#remove-btn', function(){
                     
                 }})
                 },
-                background:'url("../media_resources/alert_resources/alert_background.jpg")'});
+                //background:'url("../media_resources/alert_resources/alert_background.jpg")'
+				});
               
             
   
