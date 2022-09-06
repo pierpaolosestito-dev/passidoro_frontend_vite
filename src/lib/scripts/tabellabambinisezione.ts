@@ -1,4 +1,5 @@
 import {consts} from "../consts";
+import $ from 'jquery';
 /*window.addEventListener("load",function(){
 	var jQueryScript = document.createElement('script');
   jQueryScript.setAttribute('src','https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js');

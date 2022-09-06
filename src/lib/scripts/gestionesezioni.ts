@@ -1,5 +1,5 @@
 import {consts} from "../consts";
-
+import $ from 'jquery';
 
 
 /*window.addEventListener("load",function(){

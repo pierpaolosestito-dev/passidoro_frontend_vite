@@ -1,3 +1,4 @@
+import $ from 'jquery';
 $(document).on('click', '#lockunlockbtn', function(){
    
     if($("#lockunlockbtn").text()=="BLOCCA"){

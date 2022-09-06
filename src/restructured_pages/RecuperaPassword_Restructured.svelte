@@ -2,7 +2,7 @@
     import Navbar_Restructured from '../restructured_components/Navbar_Restructured.svelte';
     import {Spinner,Container,Card,CardBody,CardHeader,CardTitle,CardSubtitle,Alert,Col,Row,Image,Badge,Button,InputGroup,InputGroupText,Input} from 'sveltestrap';
     import { onMount,beforeUpdate} from 'svelte';
-    //import '../lib/scripts/recupera_password.ts';
+    import '../lib/scripts/recupera_password.ts';
     onMount(async () => {
         var today = new Date();
         if(sessionStorage.getItem("orario")!=null)
@@ -94,7 +94,7 @@
 </Card>
 
 <svelte:head>
-        <script type="module" src="/specific_page_js/recupera_password.js"></script>
+        <!--<script type="module" src="/specific_page_js/recupera_password.js"></script>-->
         <link rel="stylesheet" href="/restructured_css/card.css"/>
         <link rel="stylesheet" href="/restructured_css/button.css"/>
         <link rel="stylesheet" href="/specific_page_css/recupera_password.css"/>

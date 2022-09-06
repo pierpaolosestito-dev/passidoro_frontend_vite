@@ -1,7 +1,7 @@
 <script lang="ts">
     import {Spinner,Card,CardBody,CardHeader,CardTitle,CardSubtitle,Alert,Col,Row,Image,Badge,Button} from 'sveltestrap';
     import {consts} from "../lib/consts";
-    //import '../lib/scripts/profilo_bambino2.ts';
+    import '../lib/scripts/profilo_bambino2.ts';
     let radioGroup;
     let selected = "Ciao";
     let submitted = false;
@@ -195,7 +195,7 @@
             max-width:800px;
         }
     </style>
-    <script type="module" src="/specific_page_js/profilo_bambino2.js"></script>
+    <!--<script type="module" src="/specific_page_js/profilo_bambino2.js"></script>-->
 
  <link rel="stylesheet" href="/restructured_css/card.css">
  <link rel="stylesheet" href="/restructured_css/button.css">

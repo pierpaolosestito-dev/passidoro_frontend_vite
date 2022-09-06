@@ -1,4 +1,4 @@
-
+import $ from 'jquery';
 import {consts} from "../consts";
 let codiceRecuperoPassword;
 let id;

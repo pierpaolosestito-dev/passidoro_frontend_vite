@@ -52,7 +52,7 @@
 </Card>
 
 <svelte:head>
-    <script type="module" src="/specific_page_js/comunicazioni.js"></script>
+    <!--<script type="module" src="/specific_page_js/comunicazioni.js"></script>-->
     <link rel="stylesheet" href="/restructured_css/card.css">
     <link rel="stylesheet" href="/specific_page_css/comunicazioni.css">
 </svelte:head>
