@@ -99,7 +99,7 @@
       <CardSubtitle>Dati inerenti al bambino</CardSubtitle>
     </CardHeader>
     <CardBody>
-        <Image id="defaultAvatar" class="defaultAvatar" alt="defaultAvatar" src=consts.DOMAIN+"/filestorage/default-avatar"/>
+        <Image id="defaultAvatar" class="defaultAvatar" alt="defaultAvatar" src="{consts.DOMAIN}/filestorage/default-avatar"/>
         <Alert color='warning'>
         <Col>
             <Row>
