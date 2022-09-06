@@ -70,7 +70,7 @@
                     if(document.getElementById('email-madre')!=null)
                     document.getElementById('email-madre').innerText = response.data[0].Email_Genitore2;
                     if(document.getElementById('defaultAvatar')!=null)
-                    document.getElementById('defaultAvatar').src = "http://127.0.0.1:8000/filestorage/"+response.data[0].Avatar+"/"+sessionStorage.getItem("key");
+                    document.getElementById('defaultAvatar').src = consts.DOMAIN+"/filestorage/"+response.data[0].Avatar+"/"+sessionStorage.getItem("key");
                 }
                 
             });
@@ -99,7 +99,7 @@
       <CardSubtitle>Dati inerenti al bambino</CardSubtitle>
     </CardHeader>
     <CardBody>
-        <Image id="defaultAvatar" class="defaultAvatar" alt="defaultAvatar" src="http://127.0.0.1:8000/filestorage/default-avatar"/>
+        <Image id="defaultAvatar" class="defaultAvatar" alt="defaultAvatar" src=consts.DOMAIN+"/filestorage/default-avatar"/>
         <Alert color='warning'>
         <Col>
             <Row>

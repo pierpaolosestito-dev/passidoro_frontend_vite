@@ -106,7 +106,7 @@ const colors = [
   <CardBody>
     <Table id="tabellabambini" name={sezione} responsive striped rows={visibleUsers} let:row={user}>
       <Column  header="Avatar">
-        <Image id="defaultAvatar" class="defaultAvatar" src="http://127.0.0.1:8000/filestorage/{user.Avatar}/{sessionStorage.getItem("key")}"/>
+        <Image id="defaultAvatar" class="defaultAvatar" src=consts.DOMAIN+"/filestorage/{user.Avatar}/{sessionStorage.getItem("key")}"/>
       </Column>
         <Column header="Nome">
         {#if user.Inviato == 0 && user.Orario_uscita.split(":")[0] < today.getHours()}
