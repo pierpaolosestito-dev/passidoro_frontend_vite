@@ -56,8 +56,11 @@
       <CardSubtitle id="subtitle-staff">Dati membro staff: username</CardSubtitle>
     </CardHeader>
     <CardBody>
-        <Image id="defaultAvatar" class="defaultAvatar" alt="defaultAvatar" src="https://t3.ftcdn.net/jpg/01/28/56/34/360_F_128563455_bGrVZnfDCL0PxH1sU33NpOhGcCc1M7qo.jpg"/>
-        
+		{#if result.is_superuser}
+        <Image id="defaultAvatar" class="defaultAvatar" alt="defaultAvatar" src="../media_resources/staff_resources/staff_admin.png"/>
+        {:else}
+		<Image id="defaultAvatar" class="defaultAvatar" alt="defaultAvatar" src="../media_resources/staff_resources/staff_teacher.png"/>
+		{/if}
         <Col>
             <Row>
                 <p id="nome-staff">Nome</p>
