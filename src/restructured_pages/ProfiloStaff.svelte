@@ -35,6 +35,10 @@
                 document.getElementById('cognome-staff').innerText = res.data.last_name;
                 document.getElementById('email-staff').innerText = res.data.email;
                 document.getElementById('subtitle-staff').innerText = "Dati membro staff: " + res.data.username;
+				if(res.data.is_superuser)
+					document.getElementById('defaultAvatar').src="/media_resources/staff_resources/staff_admin.png";
+				else
+					document.getElementById('defaultAvatar').src="/media_resources/staff_resources/staff_teacher.png";
             }
             result = res.data;
         } catch (e) {
@@ -56,11 +60,7 @@
       <CardSubtitle id="subtitle-staff">Dati membro staff: username</CardSubtitle>
     </CardHeader>
     <CardBody>
-		{#if result.is_superuser == 1}
-        <Image id="defaultAvatar" class="defaultAvatar" alt="defaultAvatar" src="/media_resources/staff_resources/staff_admin.png"/>
-        {:else}
-		<Image id="defaultAvatar" class="defaultAvatar" alt="defaultAvatar" src="/media_resources/staff_resources/staff_teacher.png"/>
-		{/if}
+		<Image id="defaultAvatar" class="defaultAvatar" alt="defaultAvatar" src="../media_resources/loader_resources/cat_loader.gif"/>
         <Col>
             <Row>
                 <p id="nome-staff">Nome</p>
