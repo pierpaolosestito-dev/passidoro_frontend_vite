@@ -9,7 +9,7 @@
 	In particoular it uses Sveltestrap CSS Framework that implements Bootstrap component in Svelte.
 	To fetch data to server it uses Axios library.
  
- ##Some screenshot:
+<h4>Some screenshot:</h4>
  <p align="center">
   <img src="https://i.ibb.co/X21cwZd/bambini-post.png" alt="logo"/>
 </p>
