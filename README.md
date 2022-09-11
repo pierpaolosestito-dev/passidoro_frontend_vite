@@ -11,17 +11,24 @@
  
 <h4>Some screenshot:</h4>
  <p align="center">
-  <img src="https://i.ibb.co/X21cwZd/bambini-post.png" alt="logo"/>
+  <img src="https://i.ibb.co/JpBZGbF/tabella2.png" alt="logo"/>
 </p>
  <p align="center">
 <hr style="width:50%;text-align:left;margin-left:0">
 </p>
  <p align="center">
-  <img src="https://i.ibb.co/HTr7vwS/bambini-get.png" alt="logo"/>
+  <img src="https://i.ibb.co/qN5tQWV/tabella3.png" alt="logo"/>
 </p>
  <p align="center">
 <hr style="width:50%;text-align:left;margin-left:0">
 </p>
  <p align="center">
-  <img src="https://i.ibb.co/WK3qkqm/inviareport-post.png" alt="logo"/>
+  <img src="https://i.ibb.co/wMFJTs9/navbar.png" alt="logo"/>
 </p>
+<details>
+  <summary>Code's snippet</summary>
+  
+ <p align="center">
+  <img src="https://i.ibb.co/QFp5y2n/Navbar-Restructured-svelte.png" alt="logo"/>
+</p>
+  </details>
