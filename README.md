@@ -4,12 +4,12 @@
 <p align="center">
   <img src="https://i.ibb.co/NjK5FTK/fourth-logo.png" alt="logo"/>
 </p>
- ðŸ’»Web-app's frontend. This web-app helps University of Calabria's nursery and childcare management.
+	Web-app's frontend. This web-app helps University of Calabria's nursery and childcare management.
 	Frontend is developed using Svelte+Vite framework. 
 	In particoular it uses Sveltestrap CSS Framework that implements Bootstrap component in Svelte.
 	To fetch data to server it uses Axios library.
  
- Some screenshot:
+ ##Some screenshot:
  <p align="center">
   <img src="https://i.ibb.co/X21cwZd/bambini-post.png" alt="logo"/>
 </p>
