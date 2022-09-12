@@ -1,7 +1,16 @@
 .brand{
-    width:340px;
-    height:100px;
+    width:100%;
+    max-width:280px;
+    height:auto;
 }
+
+@media only screen and (max-width: 500px) {
+    .brand{
+        width:100%;
+        max-width:120px;
+        height:auto;
+    }
+  }
 .hd-navbar{
             outline: none;
             box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
