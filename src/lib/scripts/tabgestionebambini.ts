@@ -7,8 +7,8 @@ $(document).on('click', '#lockunlockbtn', function(){
 
     sessionStorage.setItem("bloccato",true);
     for(let i=1;i<=6;i++){
-		console.log($('#checkbox'+i).attr("checked"));
-       if( $('#checkbox'+i).attr("checked") != "checked")
+		
+		if(document.getElementById("checkbox"+i).checked == false)
             sessionStorage.setItem("sezione"+i,"unchecked");
         else sessionStorage.setItem("sezione"+i,"checked");
         
