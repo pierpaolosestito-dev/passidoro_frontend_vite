@@ -1,5 +1,17 @@
 #edit-btn{
+    margin-top:10px;
     display:block;
+    width:700px;
     margin-left:auto;
     margin-right:auto;
 }
+
+@media only screen and (max-width: 500px) {
+    #edit-btn{
+        margin-top:10px;
+        display:block;
+        max-width:150px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+  }

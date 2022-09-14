@@ -210,15 +210,15 @@ _ __  _  ___ _ __ _ __   __ _  ___ | | ___  ___  ___  ___| |_ _| |_ ___ ______ _
     <Fade {isOpen}>
       <Card id="hd-card-2" body>
         <Row style="margin-bottom:10px">
-          <button id="excel-btn" style="margin:auto;display:block;max-width:160px" class="hd-button">Scarica foglio Excel <i class="fa fa-file-excel" aria-hidden="true"></i></button>
+          <button id="excel-btn"  class="hd-button">Scarica foglio Excel <i class="fa fa-file-excel" aria-hidden="true"></i></button>
               </Row>
               {#if sended_users!=users.length}
               <Row style="margin-bottom:10px">
-                <button id="send-all-updated" style="margin:auto;display:block;max-width:160px" class="hd-button">Invia tutti i report modificati</button>
+                <button id="send-all-updated"  class="hd-button">Invia tutti i report modificati</button>
                     </Row>
                     {/if}
         <Row style="margin-bottom:10px">
-    <button id="remove-btn" style="margin:auto;display:block;max-width:160px" class="hd-button">Elimina tutti</button>
+    <button id="remove-btn"  class="hd-button">Elimina tutti</button>
         </Row>
         
         {#if uscitienoninviati > 0}
@@ -274,7 +274,7 @@ _ __  _  ___ _ __ _ __   __ _  ___ | | ___  ___  ___  ___| |_ _| |_ ___ ______ _
     {:else}
     {#if sended_users != users.length}
     <Row style="margin-bottom:10px">
-      <button id="send-all-updated" style="margin:auto;display:block;max-width:160px" class="hd-button">Invia tutti i report modificati</button>
+      <button id="send-all-updated" class="hd-button">Invia tutti i report modificati</button>
           </Row>
           {/if}
     {#if uscitienoninviati > 0}
@@ -320,20 +320,7 @@ _ __  _  ___ _ __ _ __   __ _  ___ | | ___  ___  ___  ___| |_ _| |_ ___ ______ _
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <link rel="stylesheet" href="/specific_page_css/tabellasezione.css"/>
   <!--<script type="module" src="/specific_page_js/tabellabambinisezione.js"></script>-->
-  <style>
-    #remove-btn{
-    border: solid 7px red /* #41403e;*/
-}
-#remove-btn:hover{
-    box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
-    background-color:red;
-    color: white;
-}
-    .defaultAvatar {
-  border-radius: 50%;
-  width:50px;
-  height:50px;
-}
-  </style>
+  
 </svelte:head>

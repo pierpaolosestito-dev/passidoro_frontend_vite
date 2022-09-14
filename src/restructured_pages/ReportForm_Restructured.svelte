@@ -152,10 +152,10 @@ import '../lib/scripts/report_form.ts';
                 <Row>
                     <Input type="textarea" name="text" id="promemoria"/>
                 </Row>
-                <Row>
+                
                     <button class="hd-button" id="conferma-modifiche">Conferma modifiche senza inviare <i class="fa fa-refresh" aria-hidden="true"></i></button>
                     <button class="hd-button" id="invia-report">Invia report ai genitori <i class="fa fa-envelope" aria-hidden="true"></i></button>
-                </Row>
+                
             </Col>
         </Alert>
     </CardBody>
@@ -164,12 +164,7 @@ import '../lib/scripts/report_form.ts';
 {/if}
 <!--{/if}-->
 <svelte:head>
-    <style>
-        #conferma-modifiche,#invia-report{
-            max-width:800px;
-            margin-top:10px;
-        }
-    </style>
+    
     
     <link rel="stylesheet" href="/restructured_css/card.css"/>
     <link rel="stylesheet" href="/specific_page_css/report_form.css"/>

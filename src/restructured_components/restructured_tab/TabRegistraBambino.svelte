@@ -86,7 +86,7 @@
                 <Badge class="badgeEmails" pill color="#c00">Tutti i dati anagrafici sono obbligatori <br> Assicurati anche di aver inserito almeno una delle due e-mail</Badge>
             </Row>
             <Row id="row">
-                <button style="display:block;margin:auto;max-width:180px" class="hd-button" id="registraa-btn">Registra bambino <i class="fa fa-check" aria-hidden="true"></i></button>
+                <button class="hd-button" id="registraa-btn">Registra bambino <i class="fa fa-check" aria-hidden="true"></i></button>
             </Row>
             
         </Col>

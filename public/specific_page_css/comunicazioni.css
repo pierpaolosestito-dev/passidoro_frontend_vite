@@ -12,3 +12,13 @@
     margin-top:10px;
     display:none;
 }
+
+#send-btn{
+    display:block;margin:auto;width:700px;
+}
+
+@media only screen and (max-width: 500px) {
+    #send-btn{
+        display:block;margin:auto;max-width:200px
+    }
+  }

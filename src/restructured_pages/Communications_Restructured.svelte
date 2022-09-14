@@ -54,9 +54,9 @@ _ __  _  ___ _ __ _ __   __ _  ___ | | ___  ___  ___  ___| |_ _| |_ ___ ______ _
             <Row id="row-2">
                 <Input type="textarea" name="text" id="messaggio"/>
             </Row>
-            <Row>
-                <button style="display:block;margin:auto;max-width:180px" id="send-btn" class="hd-button">Invia comunicazione <i class="fa fa-envelope" aria-hidden="true"></i></button>
-            </Row>
+            
+                <button  id="send-btn" class="hd-button">Invia comunicazione <i class="fa fa-envelope" aria-hidden="true"></i></button>
+            
         </Col>
     </CardBody>
 </Card>

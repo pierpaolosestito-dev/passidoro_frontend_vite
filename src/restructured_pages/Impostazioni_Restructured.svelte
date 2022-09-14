@@ -49,9 +49,9 @@
                                         <!--<Row id="row">
                                            <Container id="container-btn"> <button class="hd-button" id="edit-btn">Modifica e-mail</button></Container>
                                         </Row>-->
-                                        <Row id="row">
-                                            <Container id="container-btn"><button class="hd-button" id="confirm-btn">Conferma modifiche <i class="fa fa-refresh" aria-hidden="true"></i></button></Container>
-                                        </Row>
+                                        
+                                            <button class="hd-button" id="confirm-btn">Conferma modifiche <i class="fa fa-refresh" aria-hidden="true"></i></button>
+                                       
         </Col>
     </CardBody>
 </Card>
