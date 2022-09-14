@@ -25,6 +25,7 @@ onMount(async () => {
     document.getElementById("lockunlockbtn").innerHTML='<i class="fa fa-unlock" aria-hidden="true"></i>SBLOCCA';
     for(let i=1;i<=6;i++){
       document.getElementById("checkbox"+i).disabled=true;
+	  console.log(sessionStorage.getItem("sezione"+i));
       if(sessionStorage.getItem("sezione"+i) != "checked"){
         if(document.getElementById("checkbox"+i)!=null){
           
