@@ -2,14 +2,15 @@ import {consts} from "../consts";
 import $ from 'jquery';
 
 
-/*window.addEventListener("load",function(){
-	var jQueryScript = document.createElement('script');
-	jQueryScript.setAttribute('src','https://unpkg.com/sweetalert/dist/sweetalert.min.js');
-    jQueryScript.setAttribute('src','https://cdn.jsdelivr.net/npm/sweetalert2@11');
-	document.head.appendChild(jQueryScript);
-    
-})*/
-
+/*  _                             _                     _   _ _                 _            
+ (_)                           | |                   | | (_) |               | |           
+ _ __  _  ___ _ __ _ __   __ _  ___ | | ___  ___  ___  ___| |_ _| |_ ___ ______ __| | _____   __
+ | '_ \| |/ _ \ '__| '_ \ / _` |/ _ \| |/ _ \/ __|/ _ \/ __| __| | __/ _ \______/ _` |/ _ \ \ / /
+ | |_) | |  __/ |  | |_) | (_| | (_) | | (_) \__ \  __/\__ \ |_| | || (_) |    | (_| |  __/\ V / 
+ | .__/|_|\___|_|  | .__/ \__,_|\___/|_|\___/|___/\___||___/\__|_|\__\___/      \__,_|\___| \_/  
+ | |               | |                                                                           
+ |_|               |_|                                                                           
+ */
 $(document).on('click', '#edit-btn', function(){
    
     const table = document.getElementById("mytab");  
