@@ -6,11 +6,13 @@
 	import axios from 'axios';
   import {consts} from "../../../../lib/consts";
   import "../../../../lib/scripts/tabellabambinisezione.ts";
+   
 
 
 	let search = undefined;
   let users=[]
   let error404=false;
+  let probassenti = 0;
   console.log("SEZIONE",sezione);
 	/*$: visibleUsers = search ?
 		users.filter(user => {
@@ -24,10 +26,12 @@
     let inviati = 0;
     let modificatinoninviati = 0;
     let uscitienoninviati = 0;
+    let modified_users= 0;
+      let sended_users = 0;
     var today = new Date();
     console.log(today);
     let bol = true;
-    
+    let assenti = sessionStorage.getItem("assenti")+sezione;
     var time = today.getHours() + ":" + today.getMinutes();
     console.log("TIME:",time);
 	onMount(async () => {
@@ -45,24 +49,36 @@
    
     
     if(users != "Non ci sono bambini"){
+  
     for(let i=0;i<users.length;i++){
+      if(users[i]['Modificato'] == 1){
+        modified_users +=1;
+      }
+      if(users[i]["Inviato"] == 1 && users[i]["Modificato"] == 1){
+        sended_users+=1;
+      }
+      console.log("modified_users",modified_users);
+      console.log("sended_users",sended_users);
       console.log(i,users[i]["Modificato"])
       if(users[i]['Inviato']==0){
         let orarioSplitted = users[i]['Orario_uscita'].split(":");
         console.log(orarioSplitted[0],orarioSplitted[1]);
 
 
-        if(orarioSplitted[0] < today.getHours() && orarioSplitted[1] < today.getMinutes()){
+        if(orarioSplitted[0] < today.getHours() && orarioSplitted[1] < today.getMinutes() && users[i]['Modificato']==1){
             console.log("Sto contando");
         uscitienoninviati+=1;
+        
+        }
+        if(orarioSplitted[0] < today.getHours() && orarioSplitted[1] < today.getMinutes() && users[i]['Modificato']==0){
+            console.log("Sto contando");
+        probassenti+=1;
+        
         }
       }
-      if(users[i]["Modificato"] == 1)
-        modificati+=1;
       if(users[i]["Inviato"]==1)
         inviati+=1;
-      if(users[i]["Modificato"] == 1 && users[i]["Inviato"]==0)
-        modificatinoninviati+=1;
+      
     }
   }
     console.log("USERS",users);
@@ -120,15 +136,21 @@ _ __  _  ___ _ __ _ __   __ _  ___ | | ___  ___  ___  ___| |_ _| |_ ___ ______ _
         <Image id="defaultAvatar" class="defaultAvatar" src="{consts.DOMAIN}/filestorage/{user.Avatar}/{sessionStorage.getItem("key")}"/>
       </Column>
         <Column header="Nome">
-        {#if user.Inviato == 0 && user.Orario_uscita.split(":")[0] < today.getHours()}
+        {#if user.Inviato == 0 && user.Orario_uscita.split(":")[0] < today.getHours() && user.Modificato == true}
          <p style="color:red"> {user.Nome}</p>
+        {:else if user.Inviato == 0 && user.Orario_uscita.split(":")[0] < today.getHours() && user.Modificato == false}
+      
+        <p style="color:orange"> {user.Nome}</p>
+        
         {:else}
         {user.Nome}
         {/if}
         </Column>
         <Column header="Cognome">
-          {#if user.Inviato == 0 && user.Orario_uscita.split(":")[0] < today.getHours()}
+          {#if user.Inviato == 0 && user.Orario_uscita.split(":")[0] < today.getHours() && user.Modificato == true}
          <p style="color:red"> {user.Cognome}</p>
+        {:else if user.Inviato == 0 && user.Orario_uscita.split(":")[0] < today.getHours() && user.Modificato == false }
+        <p style="color:orange"> {user.Cognome}</p>
         {:else}
         {user.Cognome}
         {/if}
@@ -150,32 +172,38 @@ _ __  _  ___ _ __ _ __   __ _  ___ | | ___  ___  ___  ___| |_ _| |_ ___ ______ _
           <a href="/reportform?ID={user.ID}"> <button class="hd-button"><i class="fa fa-file" aria-hidden="true"></i></button></a>
           {/if}
         </Column>
+        <Column header="Modificato">
+          {#if user.Modificato == true}
+          <Input type="checkbox" checked disabled/>
+          {:else}
+          {#if user.Orario_uscita.split(":")[0] < today.getHours() && user.Inviato == 0 && user.Modificato == true}
+          <Input style="outline:1px solid red" type="checkbox" disabled/>
+          {:else if user.Orario_uscita.split(":")[0] < today.getHours() && user.Inviato == 0 && user.Modificato == false}
+          <Input style="outline:1px solid orange" type="checkbox" disabled/>
+          {:else}
+          <Input type="checkbox" disabled/>
+          {/if}
+          {/if}
+          
+        </Column>
         <Column header="Inviato">
           
           {#if user.Inviato == true}
           <Input type="checkbox" checked disabled/>
           {:else}
-          {#if user.Orario_uscita.split(":")[0] < today.getHours()}
+          {#if user.Orario_uscita.split(":")[0] < today.getHours() && user.Modificato == true}
           <Input style="outline:1px solid red" type="checkbox" disabled/>
+          {:else if user.Orario_uscita.split(":")[0] < today.getHours() && user.Modificato == false }
+          <Input style="outline:1px solid orange" type="checkbox" disabled/>
           {:else}
           <Input type="checkbox" disabled/>
           {/if}
           {/if}
           
         </Column>
-        <Column header="Modificato">
-          {#if user.Modificato == true}
-          <Input type="checkbox" checked disabled/>
-          {:else}
-          {#if user.Orario_uscita.split(":")[0] < today.getHours() && user.Inviato == 0}
-          <Input style="outline:1px solid red" type="checkbox" disabled/>
-          {:else}
-          <Input type="checkbox" disabled/>
-          {/if}
-          {/if}
-          
-        </Column>
+        
     </Table>
+    {#if sessionStorage.getItem("user") == "admin"}
     <button style="display:block;margin:auto" class="hd-button" on:click={() => (isOpen = !isOpen)}>
       Opzioni e statistiche<i class="fa fa-dashboard"></i>
     </button>
@@ -184,27 +212,58 @@ _ __  _  ___ _ __ _ __   __ _  ___ | | ___  ___  ___  ___| |_ _| |_ ___ ______ _
         <Row style="margin-bottom:10px">
           <button id="excel-btn" style="margin:auto;display:block;max-width:160px" class="hd-button">Scarica foglio Excel <i class="fa fa-file-excel" aria-hidden="true"></i></button>
               </Row>
+              {#if sended_users!=users.length}
+              <Row style="margin-bottom:10px">
+                <button id="send-all-updated" style="margin:auto;display:block;max-width:160px" class="hd-button">Invia tutti i report modificati</button>
+                    </Row>
+                    {/if}
         <Row style="margin-bottom:10px">
     <button id="remove-btn" style="margin:auto;display:block;max-width:160px" class="hd-button">Elimina tutti</button>
         </Row>
+        
         {#if uscitienoninviati > 0}
         <ListGroup style="margin-bottom:5px">
           <ListGroupItem color="danger">
                 {#if uscitienoninviati != 1}
-                <p>Ci sono {uscitienoninviati} bambini, il cui solito orario d'uscita è stato superato, probabilmente hanno lasciato l'aula e non è stato inviato il report.</p>
+                <p>Ci sono {uscitienoninviati} bambini PRESENTI con il report MODIFICATO e NON INVIATO, il cui orario di uscita è stato superato. E' probabile che abbia lasciato l'aula</p>
                 {:else}
-                <p>C'è {uscitienoninviati} bambino, il cui solito orario d'uscita è stato superato, probabilmente hanno lasciato l'aula e non è stato inviato il report.</p>
+                <p>C'è {uscitienoninviati} bambino PRESENTE con il report MODIFICATO e NON INVIATO, il cui orario di uscita è stato superato. E' probabile che abbia lasciato l'aula</p>
                 {/if}
               </ListGroupItem>
           
         </ListGroup>
         {/if}
-        {#if inviati<users.length}
-        <SezioneStatistica infoO={[inviati,users.length]}/>
-        {:else}
+        <!--
+        {#if probassenti > 0 && !assenti}
+        <ListGroup style="margin-bottom:5px">
+          <ListGroupItem color="warning">
+            <Row>
+              
+                {#if probassenti != 1}
+                <p>Ci sono {probassenti} probabilmente ASSENTI , i rispettivi report non sono stati nè MODIFICATI e nè INVIATI, il cui orario di uscita è stato superato. Se è assente, clicca la spunta sotto (NON VERRA' PIU VISUALIZZATO IL MESSAGGIO); altrimenti controlla i rispettivi report  e inviali</p>
+                {:else}
+                <p>C'è {probassenti} bambino probabilmente ASSENTE, il cui report non è stato nè MODIFICATO e nè INVIATO, il cui orario di uscita è stato superato. Se è assente, clicca la spunta sotto (NON VERRA' PIU VISUALIZZATO IL MESSAGGIO); altrimenti controlla il suo report e invialo</p>
+                {/if}
+              
+              </Row>
+              <Row>
+                <button id="assenti" style="margin:auto;display:block;max-width:50px;max-height:50px" class="hd-button"><i class="fa fa-check" aria-hidden="true"></i></button>
+              </Row>
+              </ListGroupItem>
+          
+        </ListGroup>
+        {/if}
+        -->
+        {#if modified_users!=sended_users}
+        <SezioneStatistica infoO={[sended_users,modified_users]}/>
+        {:else if modified_users == sended_users && sended_users!=0}
         <ListGroup style="margin-top:5px">
           <ListGroupItem color="success">
-                Tutti i report risultano esser stati consegnati correttamente ai rispettivi genitori.
+            {#if sended_users != users.length}
+            Tutti i report MODIFICATI risultano esser stati consegnati correttamente ai rispettivi genitori.<br> Controlla tra i presenti i report ancora da MODIFICARE e INVIARE.
+            {:else}
+            <p align="center">Lavoro completato</p>
+            {/if}          
           </ListGroupItem>
           
         </ListGroup>
@@ -212,6 +271,40 @@ _ __  _  ___ _ __ _ __   __ _  ___ | | ___  ___  ___  ___| |_ _| |_ ___ ______ _
         {/if}
       </Card>
     </Fade>
+    {:else}
+    {#if sended_users != users.length}
+    <Row style="margin-bottom:10px">
+      <button id="send-all-updated" style="margin:auto;display:block;max-width:160px" class="hd-button">Invia tutti i report modificati</button>
+          </Row>
+          {/if}
+    {#if uscitienoninviati > 0}
+        <ListGroup style="margin-bottom:5px">
+          <ListGroupItem color="danger">
+                {#if uscitienoninviati != 1}
+                <p>Ci sono {uscitienoninviati} bambini PRESENTI con il report MODIFICATO e NON INVIATO, il cui orario di uscita è stato superato. E' probabile che abbia lasciato l'aula</p>
+                {:else}
+                <p>C'è {uscitienoninviati} bambino PRESENTE con il report MODIFICATO e NON INVIATO, il cui orario di uscita è stato superato. E' probabile che abbia lasciato l'aula</p>
+                {/if}
+              </ListGroupItem>
+          
+        </ListGroup>
+        {/if}
+    {#if modified_users!=sended_users}
+    <SezioneStatistica infoO={[sended_users,modified_users]}/>
+    {:else if modified_users == sended_users && sended_users!=0}
+    <ListGroup style="margin-top:5px">
+      <ListGroupItem color="success">
+        {#if sended_users != users.length}
+        Tutti i report MODIFICATI risultano esser stati consegnati correttamente ai rispettivi genitori.<br> Controlla tra i presenti i report ancora da MODIFICARE e INVIARE.
+        {:else}
+        <p align="center">Lavoro completato</p>
+        {/if}
+      </ListGroupItem>
+      
+    </ListGroup>
+  
+    {/if}
+    {/if}
     
 
   </CardBody>

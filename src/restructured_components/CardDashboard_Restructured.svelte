@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { get_all_dirty_from_scope } from 'svelte/internal';
 import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Button,Image} from 'sveltestrap';
     export let usertype;
 

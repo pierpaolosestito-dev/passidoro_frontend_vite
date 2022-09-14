@@ -15,14 +15,19 @@ import {consts} from "../consts";
 var avatarModificato = false;
 var avatar = "";
 let oldTime;
-let imagePrePut = $('#defaultAvatar').attr('src');
+/* var imagePrePut;
+document.addEventListener("DOMContentLoaded", function(){
+  // your code here will be executed on page ready/load
+  imagePrePut = $('#defaultAvatar').attr('src');
+}); */
+
 let parameters = new URLSearchParams(window.location.search);
 console.log(parameters.get("ID"));
   let IDn= parameters.get("ID")
 
        
 $(document).on('click', '#editButton', function(){ 
-    alert(imagePrePut);
+    alert(sessionStorage.getItem("backavatar"));
     $('#hiddenRow').show();
     $('#hiddenRow2').show();
     $('#badge').show();
@@ -261,7 +266,8 @@ $('#confirmButton').prop("disabled", true);
 });
 
 $(document).on('click', '#formatimg', function(){ 
-  $('#defaultAvatar').attr("src", imagePrePut);
+  console.log(sessionStorage.getItem("backavatar"));
+  $('#defaultAvatar').attr("src", sessionStorage.getItem("backavatar"));
   $('#confirmButton').prop("disabled", false);
   avatar = "default-avatar";
   $('#formatimg').fadeOut();

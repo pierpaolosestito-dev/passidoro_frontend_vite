@@ -116,7 +116,7 @@
     <hr class="rounded">
     <Row style="margin:auto;display:block;margin-right:30px;margin-left:10px">
 
-    <Hidden name={"Maestre"} bind:this={child} on:show={e => child.shown = e.detail}>
+    <Hidden name={"Maestr@"} bind:this={child} on:show={e => child.shown = e.detail}>
         <Card id="hd-card-2">
         <ListaStaff type={false}/>
         </Card>

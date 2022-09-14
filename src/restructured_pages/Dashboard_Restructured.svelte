@@ -22,7 +22,7 @@ _ __  _  ___ _ __ _ __   __ _  ___ | | ___  ___  ___  ___| |_ _| |_ ___ ______ _
         {#if usertype == "Amministratore"}
         <CardHeader id="hd-card-header-2"><CardTitle id="card-title">Dashboard Amministratore</CardTitle></CardHeader>
         {:else}
-        <CardHeader id="hd-card-header-2"><CardTitle id="card-title">Dashboard Maestra</CardTitle></CardHeader>
+        <CardHeader id="hd-card-header-2"><CardTitle id="card-title">Dashboard Maestr@</CardTitle></CardHeader>
         {/if}
     <CardBody>
         <Row>

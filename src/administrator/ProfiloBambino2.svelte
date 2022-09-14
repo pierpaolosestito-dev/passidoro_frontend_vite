@@ -69,8 +69,10 @@
                     document.getElementById('email-padre').innerText = response.data[0].Email_Genitore1;
                     if(document.getElementById('email-madre')!=null)
                     document.getElementById('email-madre').innerText = response.data[0].Email_Genitore2;
-                    if(document.getElementById('defaultAvatar')!=null)
+                    if(document.getElementById('defaultAvatar')!=null){
                     document.getElementById('defaultAvatar').src = consts.DOMAIN+"/filestorage/"+response.data[0].Avatar+"/"+sessionStorage.getItem("key");
+                    sessionStorage.setItem("backavatar",consts.DOMAIN+"/filestorage/"+response.data[0].Avatar+"/"+sessionStorage.getItem("key"));
+                }
                 }
                 
             });

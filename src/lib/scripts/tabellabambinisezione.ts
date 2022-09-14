@@ -132,7 +132,52 @@ $(document).on('click', '#remove-btn', function(){
 
 //FINE ONCLICK
  });
-
+ $(document).on('click', '#send-all-updated', function(){
+    Swal.fire({
+        title: '<div style="background-color:#fff">Sei sicuro di voler inviare tutti i report, senza prima dargli una occhiata?</div>',
+        showDenyButton: true,
+        denyButtonText: `Invia`,
+        denyButtonColor:"green",
+        confirmButtonText: 'Annulla',
+        background:'url("../media_resources/alert_resources/alert_background.jpg")'
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+          Swal.fire({
+            title:'<div style="background-color:#fff">Rimani loggato nel sistema!</div>', 
+            icon:'success',
+            background:'url("../media_resources/alert_resources/alert_background.jpg")'});
+        } else if (result.isDenied) {
+            console.log("Clicked");
+            axios({
+                method:"post",
+                url:consts.DOMAIN+"/invia_tutti_report/",
+                headers:{"Authorization":"Token " + sessionStorage.getItem("key"),"CUSTOM-OPTION":$('#tabellabambini').attr('name')}
+            }).then(response=>{
+                console.log(response);
+                if(response.data == "OK"){
+                    swalAlert(1,"Tutti i report sono stati inviati correttamente.");
+                    setTimeout(function(){
+                        location.reload();
+                    },1200);
+                    return;
+                }
+                if(response.data=="NO"){
+                    swalAlert(0,"Non ci sono report modificati da inviare.");
+                    return;
+                }
+            }).catch(function(err){
+                swalAlertCONN_REF();
+                return;
+            })
+              
+              
+            
+  
+            
+              }
+            });
+ });
  /*  _                             _                     _   _ _                 _            
  (_)                           | |                   | | (_) |               | |           
  _ __  _  ___ _ __ _ __   __ _  ___ | | ___  ___  ___  ___| |_ _| |_ ___ ______ __| | _____   __
