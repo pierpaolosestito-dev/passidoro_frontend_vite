@@ -3,7 +3,17 @@
     import {Container,Card,CardHeader,CardTitle,CardBody,FormGroup,Label,Input,Alert,InputGroup,Button,Row,Col,FormText} from 'sveltestrap';
     import '../lib/scripts/comunicazioni.ts';
 </script>
+<!-- 
 
+_                             _                     _   _ _                 _            
+(_)                           | |                   | | (_) |               | |           
+_ __  _  ___ _ __ _ __   __ _  ___ | | ___  ___  ___  ___| |_ _| |_ ___ ______ __| | _____   __
+| '_ \| |/ _ \ '__| '_ \ / _` |/ _ \| |/ _ \/ __|/ _ \/ __| __| | __/ _ \______/ _` |/ _ \ \ / /
+| |_) | |  __/ |  | |_) | (_| | (_) | | (_) \__ \  __/\__ \ |_| | || (_) |    | (_| |  __/\ V / 
+| .__/|_|\___|_|  | .__/ \__,_|\___/|_|\___/|___/\___||___/\__|_|\__\___/      \__,_|\___| \_/  
+| |               | |                                                                           
+|_|               |_|                                                                           
+ -->
 <Navbar_Restructured/>
 <Card class="mb-3" id="hd-card-3">
     <CardHeader id="hd-card-header-3">

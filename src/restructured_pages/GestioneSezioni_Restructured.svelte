@@ -73,36 +73,17 @@
               </Column>
              
           </Table>
-<!--<Table hover id="mytab">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Username</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td><div contenteditable>Mark</div></td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-      </tr>
-    </tbody>
-  </Table>-->
+<!-- 
+
+_                             _                     _   _ _                 _            
+(_)                           | |                   | | (_) |               | |           
+_ __  _  ___ _ __ _ __   __ _  ___ | | ___  ___  ___  ___| |_ _| |_ ___ ______ __| | _____   __
+| '_ \| |/ _ \ '__| '_ \ / _` |/ _ \| |/ _ \/ __|/ _ \/ __| __| | __/ _ \______/ _` |/ _ \ \ / /
+| |_) | |  __/ |  | |_) | (_| | (_) | | (_) \__ \  __/\__ \ |_| | || (_) |    | (_| |  __/\ V / 
+| .__/|_|\___|_|  | .__/ \__,_|\___/|_|\___/|___/\___||___/\__|_|\__\___/      \__,_|\___| \_/  
+| |               | |                                                                           
+|_|               |_|                                                                           
+ -->
   <button class="hd-button" id="edit-btn">Conferma modifiche <i class="fa fa-refresh" aria-hidden="true"></i></button>
         <!--<CardSezioneRestructured sezione={"Coccinelle"}/>
         <CardSezioneRestructured sezione={"Lupacchiotti"}/>-->

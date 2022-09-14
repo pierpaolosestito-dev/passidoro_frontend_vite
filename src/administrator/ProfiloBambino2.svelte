@@ -85,10 +85,19 @@
 </script>
 
 <main>
+    <!-- 
+
+_                             _                     _   _ _                 _            
+(_)                           | |                   | | (_) |               | |           
+_ __  _  ___ _ __ _ __   __ _  ___ | | ___  ___  ___  ___| |_ _| |_ ___ ______ __| | _____   __
+| '_ \| |/ _ \ '__| '_ \ / _` |/ _ \| |/ _ \/ __|/ _ \/ __| __| | __/ _ \______/ _` |/ _ \ \ / /
+| |_) | |  __/ |  | |_) | (_| | (_) | | (_) \__ \  __/\__ \ |_| | || (_) |    | (_| |  __/\ V / 
+| .__/|_|\___|_|  | .__/ \__,_|\___/|_|\___/|___/\___||___/\__|_|\__\___/      \__,_|\___| \_/  
+| |               | |                                                                           
+|_|               |_|                                                                           
+ -->
 <Navbar_Restructured/>
-<!--{#if  result.length == 0 && !error404}
-<Spinner style="display:block;margin-left:auto;margin-right:auto;vertical-align:middle;margin-top:20px" color="{colors[Math.floor(Math.random()*colors.length)]}" type="grow" />
-{:else}-->
+
 
 {#if result == "Il bambino non esiste" || error404}
 <ErrorCard/>
