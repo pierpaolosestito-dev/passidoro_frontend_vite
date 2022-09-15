@@ -10,7 +10,7 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
         <Image alt="icon" class="dashboard-icon" src="/media_resources/dashboard_resources/dashboard_usersettings_new2.PNG"/>
     </CardHeader>
     <CardBody>
-        <CardSubtitle> <b>Impostazioni profilo </b> </CardSubtitle>
+        <CardSubtitle><p align="center"> <b>Impostazioni profilo </b> </p></CardSubtitle>
         <CardText><p align="center">Entra qui cambiare le credenziali d'accesso.</p></CardText>
     </CardBody>
     <CardFooter id="hd-card-footer">
@@ -24,7 +24,7 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
         <Image alt="icon" class="dashboard-icon" src="/media_resources/dashboard_resources/dashboard_childrenhandler.PNG"/>
     </CardHeader>
     <CardBody>
-        <CardSubtitle><b>Gestisci bambini</b></CardSubtitle>
+        <CardSubtitle><p align="center"> <b>Gestisci bambini </b> </p></CardSubtitle>
         {#if sessionStorage.getItem("user") == "admin"}
         <CardText><p align="center">Entra qui per iscrivere e disiscrivere bambini, per visualizzare i rispettivi dati anagrafici, modificare ed inviare i loro report.</p></CardText>
         {:else}
@@ -44,7 +44,7 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
         <Image alt="icon" class="dashboard-icon" src="/media_resources/dashboard_resources/dashboard_sectionhandler.PNG"/>
     </CardHeader>
     <CardBody>
-        <CardSubtitle><b>Gestisci sezioni</b></CardSubtitle>
+        <CardSubtitle><p align="center"> <b>Gestisci sezioni </b> </p></CardSubtitle>
         <CardText><p align="center">Entra qui per visualizzare e modificare i rappresentanti di ogni sezione.</p></CardText>
     </CardBody>
     <CardFooter id="hd-card-footer">
@@ -57,7 +57,7 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
         <Image alt="icon" class="dashboard-icon" src="/media_resources/dashboard_resources/dashboard_sectionhandler.PNG"/>
     </CardHeader>
     <CardBody>
-        <CardSubtitle><b>Gestisci staff</b></CardSubtitle>
+        <CardSubtitle><p align="center"> <b>Gestisci staff </b> </p></CardSubtitle>
         <CardText><p align="center">Entra qui per gestire i dipendenti del polo d'infanzia.</p></CardText>
     </CardBody>
     <CardFooter id="hd-card-footer">
@@ -73,7 +73,7 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
         <Image alt="icon" class="dashboard-icon" src="/media_resources/dashboard_resources/dashboard_email_icon_2.PNG"/>
     </CardHeader>
     <CardBody>
-        <CardSubtitle><b>Comunicazione ai genitori</b></CardSubtitle>
+        <CardSubtitle><p align="center"> <b>Comunicazioni </b> </p></CardSubtitle>
         <CardText><p align="center">Entra qui per inviare una comunicazione ai genitori di una sezione o semplicemente al rappresentante.</p></CardText>
     </CardBody>
     <CardFooter id="hd-card-footer">

@@ -10,9 +10,7 @@
     </CardHeader>
     <CardBody>
         <Image alt="excel-icon" class="img-excel" src="/media_resources/dashboard_resources/excel.PNG"/>
-        <CardText>
-            Da questa sezione sarà possibile...
-        </CardText>
+        <hr style="border: 2px solid green;border-radius:5px" class="new5">
         <span height=50px></span>
         <Input type="file" placeholder="Inserisci file Excel" id="excelfile-input" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
         <button style="display:block;margin:auto" on:click={() => (isOpen = !isOpen)} class="hd-button">
