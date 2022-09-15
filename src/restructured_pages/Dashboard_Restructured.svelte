@@ -20,9 +20,9 @@ _ __  _  ___ _ __ _ __   __ _  ___ | | ___  ___  ___  ___| |_ _| |_ ___ ______ _
     <Navbar_Restructured/>
     <Card class="mb-3" id="hd-card-2">
         {#if usertype == "Amministratore"}
-        <CardHeader id="hd-card-header-2"><CardTitle id="card-title">Dashboard Amministratore</CardTitle></CardHeader>
+        <CardHeader id="hd-card-header-2"><CardTitle id="card-title"><b>DASHBOARD AMMINISTRATORE</b></CardTitle></CardHeader>
         {:else}
-        <CardHeader id="hd-card-header-2"><CardTitle id="card-title">Dashboard Maestr@</CardTitle></CardHeader>
+        <CardHeader id="hd-card-header-2"><CardTitle id="card-title"><b>DASHBOARD MAESTR@</b></CardTitle></CardHeader>
         {/if}
     <CardBody>
         <Row>
