@@ -25,7 +25,11 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
     </CardHeader>
     <CardBody>
         <CardSubtitle> Gestisci bambini </CardSubtitle>
-        <CardText>Da questa sezione sarà possibile cambiare le proprie credenziali d'accesso.</CardText>
+        {#if sessionStorage.getItem("user") == "admin"}
+        <CardText>Entra qui per iscrivere e disiscrivere bambini, per visualizzare i rispettivi dati anagrafici, modificare ed inviare i loro report</CardText>
+        {:else}
+        <CardText>Entra qui per visualizzare i dati anagrafici dei bambini, modificare ed inviare i loro report</CardText>
+        {/if}
     </CardBody>
     <CardFooter id="hd-card-footer">
         <a href="{sessionStorage.getItem("user")}/gestioneBambini"><button class="hd-button">Gestisci</button></a>
@@ -41,7 +45,7 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
     </CardHeader>
     <CardBody>
         <CardSubtitle> Gestisci sezioni </CardSubtitle>
-        <CardText>Da questa sezione sarà possibile gestire le sezioni dell'asilo nido e l'email dei rispettivi rappresentanti.</CardText>
+        <CardText>Entra qui per visualizzare e modificare i rappresentanti di ogni sezione</CardText>
     </CardBody>
     <CardFooter id="hd-card-footer">
         <a href="admin/gestioneSezioni2"><button class="hd-button">Gestisci</button></a>
@@ -54,7 +58,7 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
     </CardHeader>
     <CardBody>
         <CardSubtitle> Gestisci staff </CardSubtitle>
-        <CardText>Da questa sezione sarà possibile gestire lo staff dell'asilo nido.</CardText>
+        <CardText>Entra qui per gestire i dipendenti del polo d'infanzia.</CardText>
     </CardBody>
     <CardFooter id="hd-card-footer">
         <a href="admin/gestioneStaff"><button class="hd-button">Gestisci</button></a>
@@ -70,7 +74,7 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
     </CardHeader>
     <CardBody>
         <CardSubtitle> Comunicazione ai genitori </CardSubtitle>
-        <CardText>Da questa sezione sarà possibile cambiare le proprie credenziali d'accesso.</CardText>
+        <CardText>Entra qui per inviare una comunicazione ai genitori di una sezione o semplicemente al rappresentante.</CardText>
     </CardBody>
     <CardFooter id="hd-card-footer">
         <a href="maestra/comunicazioni"><button class="hd-button">Invia comunicazione</button></a>
