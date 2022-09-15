@@ -10,8 +10,8 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
         <Image alt="icon" class="dashboard-icon" src="/media_resources/dashboard_resources/dashboard_usersettings_new2.PNG"/>
     </CardHeader>
     <CardBody>
-        <CardSubtitle> Impostazioni profilo </CardSubtitle>
-        <CardText>Da questa sezione sarà possibile cambiare le proprie credenziali d'accesso.</CardText>
+        <CardSubtitle> <b>Impostazioni profilo </b> </CardSubtitle>
+        <CardText><p align="center">Entra qui cambiare le credenziali d'accesso.</p></CardText>
     </CardBody>
     <CardFooter id="hd-card-footer">
         <a href="impostazioniprofilo"><button class="hd-button">Impostazioni</button></a>
@@ -24,11 +24,11 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
         <Image alt="icon" class="dashboard-icon" src="/media_resources/dashboard_resources/dashboard_childrenhandler.PNG"/>
     </CardHeader>
     <CardBody>
-        <CardSubtitle> Gestisci bambini </CardSubtitle>
+        <CardSubtitle><b>Gestisci bambini</b></CardSubtitle>
         {#if sessionStorage.getItem("user") == "admin"}
-        <CardText>Entra qui per iscrivere e disiscrivere bambini, per visualizzare i rispettivi dati anagrafici, modificare ed inviare i loro report</CardText>
+        <CardText><p align="center">Entra qui per iscrivere e disiscrivere bambini, per visualizzare i rispettivi dati anagrafici, modificare ed inviare i loro report.</p></CardText>
         {:else}
-        <CardText>Entra qui per visualizzare i dati anagrafici dei bambini, modificare ed inviare i loro report</CardText>
+        <CardText><p align="center">Entra qui per visualizzare i dati anagrafici dei bambini, modificare ed inviare i loro report.</p></CardText>
         {/if}
     </CardBody>
     <CardFooter id="hd-card-footer">
@@ -44,8 +44,8 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
         <Image alt="icon" class="dashboard-icon" src="/media_resources/dashboard_resources/dashboard_sectionhandler.PNG"/>
     </CardHeader>
     <CardBody>
-        <CardSubtitle> Gestisci sezioni </CardSubtitle>
-        <CardText>Entra qui per visualizzare e modificare i rappresentanti di ogni sezione</CardText>
+        <CardSubtitle><b>Gestisci sezioni</b></CardSubtitle>
+        <CardText><p align="center">Entra qui per visualizzare e modificare i rappresentanti di ogni sezione.</p></CardText>
     </CardBody>
     <CardFooter id="hd-card-footer">
         <a href="admin/gestioneSezioni2"><button class="hd-button">Gestisci</button></a>
@@ -57,8 +57,8 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
         <Image alt="icon" class="dashboard-icon" src="/media_resources/dashboard_resources/dashboard_sectionhandler.PNG"/>
     </CardHeader>
     <CardBody>
-        <CardSubtitle> Gestisci staff </CardSubtitle>
-        <CardText>Entra qui per gestire i dipendenti del polo d'infanzia.</CardText>
+        <CardSubtitle><b>Gestisci staff</b></CardSubtitle>
+        <CardText><p align="center">Entra qui per gestire i dipendenti del polo d'infanzia.</p></CardText>
     </CardBody>
     <CardFooter id="hd-card-footer">
         <a href="admin/gestioneStaff"><button class="hd-button">Gestisci</button></a>
@@ -73,8 +73,8 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
         <Image alt="icon" class="dashboard-icon" src="/media_resources/dashboard_resources/dashboard_email_icon_2.PNG"/>
     </CardHeader>
     <CardBody>
-        <CardSubtitle> Comunicazione ai genitori </CardSubtitle>
-        <CardText>Entra qui per inviare una comunicazione ai genitori di una sezione o semplicemente al rappresentante.</CardText>
+        <CardSubtitle><b>Comunicazione ai genitori</b></CardSubtitle>
+        <CardText><p align="center">Entra qui per inviare una comunicazione ai genitori di una sezione o semplicemente al rappresentante.</p></CardText>
     </CardBody>
     <CardFooter id="hd-card-footer">
         <a href="maestra/comunicazioni"><button class="hd-button">Invia comunicazione</button></a>
