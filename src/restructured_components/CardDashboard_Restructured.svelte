@@ -14,7 +14,7 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
         <CardText><p align="center">Entra qui cambiare le credenziali d'accesso.</p></CardText>
     </CardBody>
     <CardFooter id="hd-card-footer">
-        <a href="impostazioniprofilo"><button class="hd-button">Impostazioni</button></a>
+        <a style="display:block;margin:auto" href="impostazioniprofilo"><button class="hd-button">Impostazioni</button></a>
     </CardFooter>
 </Card>
 <!--GESTIONE BAMBINI CARD-->
@@ -32,7 +32,7 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
         {/if}
     </CardBody>
     <CardFooter id="hd-card-footer">
-        <a href="{sessionStorage.getItem("user")}/gestioneBambini"><button class="hd-button">Gestisci</button></a>
+        <a style="display:block;margin:auto" href="{sessionStorage.getItem("user")}/gestioneBambini"><button class="hd-button">Gestisci</button></a>
     </CardFooter>
 </Card>
 
@@ -48,7 +48,7 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
         <CardText><p align="center">Entra qui per visualizzare e modificare i rappresentanti di ogni sezione.</p></CardText>
     </CardBody>
     <CardFooter id="hd-card-footer">
-        <a href="admin/gestioneSezioni2"><button class="hd-button">Gestisci</button></a>
+        <a style="display:block;margin:auto" href="admin/gestioneSezioni2"><button class="hd-button">Gestisci</button></a>
     </CardFooter>
 </Card>
 {:else if usertype == "Gestione staff"}
@@ -61,7 +61,7 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
         <CardText><p align="center">Entra qui per gestire i dipendenti del polo d'infanzia.</p></CardText>
     </CardBody>
     <CardFooter id="hd-card-footer">
-        <a href="admin/gestioneStaff"><button class="hd-button">Gestisci</button></a>
+        <a style="display:block;margin:auto" href="admin/gestioneStaff"><button class="hd-button">Gestisci</button></a>
     </CardFooter>
 </Card>
 
@@ -77,7 +77,7 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
         <CardText><p align="center">Entra qui per inviare una comunicazione ai genitori di una sezione o semplicemente al rappresentante.</p></CardText>
     </CardBody>
     <CardFooter id="hd-card-footer">
-        <a href="maestra/comunicazioni"><button class="hd-button">Invia comunicazione</button></a>
+        <a style="display:block;margin:auto" href="maestra/comunicazioni"><button class="hd-button">Invia comunicazione</button></a>
     </CardFooter >
 </Card>
 {/if}
