@@ -118,9 +118,8 @@ import '../lib/scripts/report_form.ts';
                     <Label for="exampleSelect">HA DORMITO</Label>
                 </Col>
                 <Col>
-                    <Input id="r3" type="radio" bind:group={radioGroup} value="SI " label="SI"/>
                     <Input id="r4" type="radio" bind:group={radioGroup} value="NO " label="NO"/>
-
+                    <Input id="r3" type="radio" bind:group={radioGroup} value="SI " label="SI"/>
                 </Col>
             </Row>
             <Row>
@@ -128,9 +127,10 @@ import '../lib/scripts/report_form.ts';
                     <Label for="exampleSelect">BISOGNI FIOSOLOGICI:</Label>
                 </Col>
                 <Col>
-                    
-                    <Input id="r1" type="radio" bind:group={radioGroup1} value="SI " label="SI"/>
+
                     <Input id="r2" type="radio" bind:group={radioGroup1} value="NO " label="NO"/>
+                    <Input id="r1" type="radio" bind:group={radioGroup1} value="SI " label="SI"/>
+                    
                 </Col>
             </Row>
             <Alert color="dark" id="info-aggiuntive">

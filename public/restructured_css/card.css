@@ -24,7 +24,7 @@
             transition: all 0.5s ease;
             border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
-#hd-card-header{
+#hd-card-header-dashboard{
             border-bottom: solid 7px  #f1d3b2;/*#41403e;*/
             outline: none;
             box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
@@ -32,6 +32,14 @@
             background-color: #fafafc;
             transition: all 0.5s ease;
             border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+#hd-card-header{
+    border-bottom: solid 7px  #f1d3b2;/*#41403e;*/
+    outline: none;
+    box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+    color: #41403e;
+    transition: all 0.5s ease;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
 #hd-card-header-2{
     border-bottom: dashed 7px #bedaf1;

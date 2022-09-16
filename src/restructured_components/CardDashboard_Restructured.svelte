@@ -6,7 +6,7 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
 <!--IMPOSTAZIONI PROFILO CARD-->
 {#if usertype == "Impostazioni profilo"}
 <Card class="mb-3" id="hd-card">
-    <CardHeader id="hd-card-header">
+    <CardHeader id="hd-card-header-dashboard">
         <Image alt="icon" class="dashboard-icon" src="/media_resources/dashboard_resources/dashboard_usersettings_new2.PNG"/>
     </CardHeader>
     <CardBody>
@@ -20,7 +20,7 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
 <!--GESTIONE BAMBINI CARD-->
 {:else if usertype == "Gestione bambini"}
 <Card class="mb-3" id="hd-card">
-    <CardHeader id="hd-card-header">
+    <CardHeader id="hd-card-header-dashboard">
         <Image alt="icon" class="dashboard-icon" src="/media_resources/dashboard_resources/dashboard_childrenhandler.PNG"/>
     </CardHeader>
     <CardBody>
@@ -40,7 +40,7 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
 <!--GESTIONE SEZIONI CARD-->
 {:else if usertype == "Gestione sezioni"}
 <Card class="mb-3" id="hd-card">
-    <CardHeader id ="hd-card-header">
+    <CardHeader id ="hd-card-header-dashboard">
         <Image alt="icon" class="dashboard-icon" src="/media_resources/dashboard_resources/dashboard_sectionhandler.PNG"/>
     </CardHeader>
     <CardBody>
@@ -53,7 +53,7 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
 </Card>
 {:else if usertype == "Gestione staff"}
 <Card class="mb-3" id="hd-card">
-    <CardHeader id ="hd-card-header">
+    <CardHeader id ="hd-card-header-dashboard">
         <Image alt="icon" class="dashboard-icon" src="/media_resources/dashboard_resources/dashboard_sectionhandler.PNG"/>
     </CardHeader>
     <CardBody>
@@ -69,7 +69,7 @@ import {Card,CardBody,CardFooter,CardHeader,CardSubtitle,CardText,CardTitle,Butt
 <!--MAESTRA CARD-->
 {:else if usertype == "Comunicazione ai genitori"}
 <Card class="mb-3" id="hd-card">
-    <CardHeader id="hd-card-header">
+    <CardHeader id="hd-card-header-dashboard">
         <Image alt="icon" class="dashboard-icon" src="/media_resources/dashboard_resources/dashboard_email_icon_2.PNG"/>
     </CardHeader>
     <CardBody>
