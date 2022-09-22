@@ -50,7 +50,7 @@ function s2ab(s){
 $(document).on('click', '#remove-btn', function(){
 
     Swal.fire({
-        title: '<div style="background-color:#fff">Vuoi veramente uscire dal sistema?</div>',
+        title: '<div style="background-color:#fff">Vuoi veramente eliminare tutti i bambini?</div>',
         showDenyButton: true,
         denyButtonText: `Elimina`,
         confirmButtonText: 'Annulla',
