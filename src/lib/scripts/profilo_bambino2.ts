@@ -45,7 +45,7 @@ $(document).on('click', '#editButton', function(){
 
     var email_padre = $("#email-padre").text();
     var email_madre = $("#email-madre").text();
-    alert(email_padre);
+    
     if($('#emailPadre').val() != ""){
         if(!regex.test($('#emailPadre').val())){
           swalAlert(0,"Controlla le email inserite.");
