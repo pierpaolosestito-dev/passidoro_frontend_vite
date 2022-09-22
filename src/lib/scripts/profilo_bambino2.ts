@@ -27,7 +27,7 @@ console.log(parameters.get("ID"));
 
        
 $(document).on('click', '#editButton', function(){ 
-    alert(sessionStorage.getItem("backavatar"));
+  
     $('#hiddenRow').show();
     $('#hiddenRow2').show();
     $('#badge').show();

@@ -84,7 +84,7 @@ _ __  _  ___ _ __ _ __   __ _  ___ | | ___  ___  ___  ___| |_ _| |_ ___ ______ _
                 <input type="email" id="email-staff-input" placeholder="INSERISCI NUOVA EMAIL"/>
             </Row>
             <Row>
-                <button class="hd-button" id="removeButton">Elimina <i class="fa fa-trash" aria-hidden="true"></i></button>
+                <button class="hd-button" id="removeButtonn">Elimina <i class="fa fa-trash" aria-hidden="true"></i></button>
             </Row>
             <Row id="hiddenRow3">
                 <button class="hd-button" id="editButton">Modifica <i class="fa fa-refresh" aria-hidden="true"></i></button>

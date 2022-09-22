@@ -55,7 +55,7 @@ $(document).on('click', '#confirmButton', function(){
     }
 );
 
-$(document).on('click', '#removeButton', function(){
+$(document).on('click', '#removeButtonn', function(){
   
   Swal.fire({
     title: '<div style="background-color:#fff">Vuoi veramente eliminare il membro dello staff?</div>',
