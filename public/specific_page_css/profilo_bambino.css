@@ -30,10 +30,10 @@
     display:none;
     margin-bottom:10px;
 }
-#removeButton{
+#removeButton,#removeButtonn{
     border: solid 7px red /* #41403e;*/
 }
-#removeButton:hover{
+#removeButton:hover,#removeButtonn:hover{
     box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
     background-color:red;
     color: white;
