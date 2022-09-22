@@ -42,8 +42,11 @@
 <ListGroup style="display:block;margin:auto">
     <ListGroupItem color="info">
         <Row>
-            
+            {#if type}
             <Image id="badge" src="../media_resources/staff_resources/staff_admin.png"/>
+            {:else}
+            <Image id="badge" src="../media_resources/staff_resources/staff_teacher.png"/>
+            {/if}
             
             <Col>
                 {user.first_name}
