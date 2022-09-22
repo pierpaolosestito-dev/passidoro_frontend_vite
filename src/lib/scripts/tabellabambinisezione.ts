@@ -92,8 +92,9 @@ $(document).on('click', '#remove-btn', function(){
                                                 location.reload();
                                             },1200);
                                             return;
-                                        }
+                                        }else{
                                         swalAlert(0,response.data);
+                                        }
                                         return;
                                     }).catch(function(err){
                                         swalAlertCONN_REF();
